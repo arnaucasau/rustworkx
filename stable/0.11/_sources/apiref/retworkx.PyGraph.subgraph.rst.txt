@@ -1,0 +1,6 @@
+retworkx.PyGraph.subgraph
+=========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.subgraph

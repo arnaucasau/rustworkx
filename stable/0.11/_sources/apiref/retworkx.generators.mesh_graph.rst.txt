@@ -1,0 +1,6 @@
+﻿retworkx.generators.mesh\_graph
+===============================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: mesh_graph

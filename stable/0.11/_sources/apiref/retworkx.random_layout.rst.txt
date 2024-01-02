@@ -1,0 +1,6 @@
+﻿retworkx.random\_layout
+=======================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: random_layout

@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.add\_edges\_from
+===================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.add_edges_from

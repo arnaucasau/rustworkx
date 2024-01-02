@@ -1,0 +1,6 @@
+﻿retworkx.graph\_betweenness\_centrality
+=======================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: graph_betweenness_centrality

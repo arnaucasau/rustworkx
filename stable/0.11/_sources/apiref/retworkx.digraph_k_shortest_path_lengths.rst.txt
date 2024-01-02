@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_k\_shortest\_path\_lengths
+============================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_k_shortest_path_lengths

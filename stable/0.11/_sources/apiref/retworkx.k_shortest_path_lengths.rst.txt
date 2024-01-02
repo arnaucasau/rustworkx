@@ -1,0 +1,6 @@
+﻿retworkx.k\_shortest\_path\_lengths
+===================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: k_shortest_path_lengths

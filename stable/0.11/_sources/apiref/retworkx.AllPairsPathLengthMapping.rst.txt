@@ -1,0 +1,20 @@
+﻿AllPairsPathLengthMapping
+=========================
+
+.. currentmodule:: retworkx
+
+.. autoclass:: AllPairsPathLengthMapping
+   :no-members:
+   :show-inheritance:
+
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      :toctree: ../apiref/
+
+      ~AllPairsPathLengthMapping.items
+      ~AllPairsPathLengthMapping.keys
+      ~AllPairsPathLengthMapping.values
+
+

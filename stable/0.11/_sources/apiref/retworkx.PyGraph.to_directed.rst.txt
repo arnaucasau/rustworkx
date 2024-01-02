@@ -1,0 +1,6 @@
+retworkx.PyGraph.to\_directed
+=============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.to_directed

@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_vf2\_mapping
+==============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_vf2_mapping

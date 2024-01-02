@@ -1,0 +1,6 @@
+﻿retworkx.is\_weakly\_connected
+==============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: is_weakly_connected

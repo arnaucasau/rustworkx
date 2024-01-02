@@ -1,0 +1,6 @@
+﻿retworkx.generators.full\_rary\_tree
+====================================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: full_rary_tree

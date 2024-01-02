@@ -1,0 +1,6 @@
+﻿retworkx.graph\_adjacency\_matrix
+=================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: graph_adjacency_matrix

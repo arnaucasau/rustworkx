@@ -1,0 +1,6 @@
+﻿retworkx.DAGHasCycle
+====================
+
+.. currentmodule:: retworkx
+
+.. autoexception:: DAGHasCycle

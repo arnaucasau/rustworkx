@@ -1,0 +1,6 @@
+﻿retworkx.ancestors
+==================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: ancestors

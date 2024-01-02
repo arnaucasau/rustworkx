@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_betweenness\_centrality
+=========================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_betweenness_centrality

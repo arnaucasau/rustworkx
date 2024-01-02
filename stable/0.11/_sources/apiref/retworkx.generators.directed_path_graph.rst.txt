@@ -1,0 +1,6 @@
+﻿retworkx.generators.directed\_path\_graph
+=========================================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: directed_path_graph

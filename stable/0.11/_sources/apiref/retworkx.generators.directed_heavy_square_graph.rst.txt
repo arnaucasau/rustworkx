@@ -1,0 +1,6 @@
+﻿retworkx.generators.directed\_heavy\_square\_graph
+==================================================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: directed_heavy_square_graph

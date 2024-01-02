@@ -1,0 +1,6 @@
+﻿retworkx.dfs\_edges
+===================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: dfs_edges

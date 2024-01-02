@@ -1,0 +1,6 @@
+﻿retworkx.generators.barbell\_graph
+==================================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: barbell_graph

@@ -1,0 +1,6 @@
+retworkx.PyDAG.adj
+==================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.adj

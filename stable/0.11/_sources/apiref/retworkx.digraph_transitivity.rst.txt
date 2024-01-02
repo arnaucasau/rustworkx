@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_transitivity
+==============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_transitivity

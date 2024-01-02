@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.remove\_node\_retain\_edges
+==============================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.remove_node_retain_edges

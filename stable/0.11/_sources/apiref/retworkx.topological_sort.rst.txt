@@ -1,0 +1,6 @@
+﻿retworkx.topological\_sort
+==========================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: topological_sort

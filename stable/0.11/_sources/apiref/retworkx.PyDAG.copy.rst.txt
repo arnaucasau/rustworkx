@@ -1,0 +1,6 @@
+retworkx.PyDAG.copy
+===================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.copy

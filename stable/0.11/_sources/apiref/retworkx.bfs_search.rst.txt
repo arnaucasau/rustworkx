@@ -1,0 +1,6 @@
+﻿retworkx.bfs\_search
+====================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: bfs_search

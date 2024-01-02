@@ -1,0 +1,6 @@
+retworkx.PyDAG.contract\_nodes
+==============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.contract_nodes

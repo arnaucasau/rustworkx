@@ -1,0 +1,6 @@
+retworkx.PyGraph.num\_edges
+===========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.num_edges

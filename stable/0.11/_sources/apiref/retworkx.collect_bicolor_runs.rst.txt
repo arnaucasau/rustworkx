@@ -1,0 +1,6 @@
+﻿retworkx.collect\_bicolor\_runs
+===============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: collect_bicolor_runs

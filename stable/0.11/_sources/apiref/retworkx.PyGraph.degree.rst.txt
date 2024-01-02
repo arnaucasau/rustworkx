@@ -1,0 +1,6 @@
+retworkx.PyGraph.degree
+=======================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.degree

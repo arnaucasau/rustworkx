@@ -1,0 +1,6 @@
+retworkx.PyDAG.to\_undirected
+=============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.to_undirected

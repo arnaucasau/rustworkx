@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_union
+=======================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_union

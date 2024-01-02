@@ -1,0 +1,6 @@
+retworkx.PyDAG.weighted\_edge\_list
+===================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.weighted_edge_list

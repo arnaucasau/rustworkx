@@ -1,0 +1,6 @@
+﻿retworkx.floyd\_warshall\_numpy
+===============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: floyd_warshall_numpy

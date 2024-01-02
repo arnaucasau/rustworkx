@@ -1,0 +1,6 @@
+﻿retworkx.generators.cycle\_graph
+================================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: cycle_graph

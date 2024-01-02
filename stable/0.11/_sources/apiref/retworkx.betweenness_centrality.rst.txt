@@ -1,0 +1,6 @@
+﻿retworkx.betweenness\_centrality
+================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: betweenness_centrality

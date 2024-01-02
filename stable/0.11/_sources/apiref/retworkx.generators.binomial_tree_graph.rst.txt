@@ -1,0 +1,6 @@
+﻿retworkx.generators.binomial\_tree\_graph
+=========================================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: binomial_tree_graph

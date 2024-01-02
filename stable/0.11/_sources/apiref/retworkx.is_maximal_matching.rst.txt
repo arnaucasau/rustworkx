@@ -1,0 +1,6 @@
+﻿retworkx.is\_maximal\_matching
+==============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: is_maximal_matching

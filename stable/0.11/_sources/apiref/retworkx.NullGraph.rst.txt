@@ -1,0 +1,6 @@
+﻿retworkx.NullGraph
+==================
+
+.. currentmodule:: retworkx
+
+.. autoexception:: NullGraph

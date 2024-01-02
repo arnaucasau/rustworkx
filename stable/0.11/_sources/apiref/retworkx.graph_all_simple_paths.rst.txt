@@ -1,0 +1,6 @@
+﻿retworkx.graph\_all\_simple\_paths
+==================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: graph_all_simple_paths

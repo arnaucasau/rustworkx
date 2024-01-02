@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_cartesian\_product
+====================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_cartesian_product

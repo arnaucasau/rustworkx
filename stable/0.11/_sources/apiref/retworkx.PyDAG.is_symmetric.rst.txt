@@ -1,0 +1,6 @@
+retworkx.PyDAG.is\_symmetric
+============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.is_symmetric

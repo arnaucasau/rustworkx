@@ -1,0 +1,6 @@
+﻿retworkx.dijkstra\_search
+=========================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: dijkstra_search

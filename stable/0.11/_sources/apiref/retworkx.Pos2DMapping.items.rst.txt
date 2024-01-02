@@ -1,0 +1,6 @@
+retworkx.Pos2DMapping.items
+===========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: Pos2DMapping.items

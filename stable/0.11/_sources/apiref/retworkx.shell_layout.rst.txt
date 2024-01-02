@@ -1,0 +1,6 @@
+﻿retworkx.shell\_layout
+======================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: shell_layout

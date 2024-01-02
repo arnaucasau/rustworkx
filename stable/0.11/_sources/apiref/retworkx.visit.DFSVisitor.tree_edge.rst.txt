@@ -1,0 +1,6 @@
+retworkx.visit.DFSVisitor.tree\_edge
+====================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: DFSVisitor.tree_edge

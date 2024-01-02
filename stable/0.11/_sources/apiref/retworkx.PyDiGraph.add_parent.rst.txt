@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.add\_parent
+==============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.add_parent

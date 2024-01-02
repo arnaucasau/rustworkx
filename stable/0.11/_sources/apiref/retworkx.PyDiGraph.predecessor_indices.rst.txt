@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.predecessor\_indices
+=======================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.predecessor_indices

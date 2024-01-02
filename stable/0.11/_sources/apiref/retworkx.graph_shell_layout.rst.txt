@@ -1,0 +1,6 @@
+﻿retworkx.graph\_shell\_layout
+=============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: graph_shell_layout

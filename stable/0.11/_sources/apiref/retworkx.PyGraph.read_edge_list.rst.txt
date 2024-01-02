@@ -1,0 +1,6 @@
+retworkx.PyGraph.read\_edge\_list
+=================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.read_edge_list

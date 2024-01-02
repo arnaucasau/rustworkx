@@ -1,0 +1,6 @@
+retworkx.TopologicalSorter.is\_active
+=====================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: TopologicalSorter.is_active

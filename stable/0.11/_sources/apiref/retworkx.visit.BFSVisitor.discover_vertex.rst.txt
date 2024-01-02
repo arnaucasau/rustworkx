@@ -1,0 +1,6 @@
+retworkx.visit.BFSVisitor.discover\_vertex
+==========================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: BFSVisitor.discover_vertex

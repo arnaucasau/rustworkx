@@ -1,0 +1,6 @@
+retworkx.visit.DFSVisitor.back\_edge
+====================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: DFSVisitor.back_edge

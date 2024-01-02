@@ -1,0 +1,6 @@
+retworkx.PyDAG.adj\_direction
+=============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.adj_direction

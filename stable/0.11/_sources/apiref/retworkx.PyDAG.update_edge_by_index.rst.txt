@@ -1,0 +1,6 @@
+retworkx.PyDAG.update\_edge\_by\_index
+======================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.update_edge_by_index

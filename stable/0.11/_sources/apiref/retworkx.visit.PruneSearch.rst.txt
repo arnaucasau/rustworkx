@@ -1,0 +1,6 @@
+﻿retworkx.visit.PruneSearch
+==========================
+
+.. currentmodule:: retworkx.visit
+
+.. autoexception:: PruneSearch

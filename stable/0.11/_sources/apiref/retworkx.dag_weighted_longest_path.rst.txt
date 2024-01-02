@@ -1,0 +1,6 @@
+﻿retworkx.dag\_weighted\_longest\_path
+=====================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: dag_weighted_longest_path

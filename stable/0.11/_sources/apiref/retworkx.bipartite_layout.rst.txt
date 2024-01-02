@@ -1,0 +1,6 @@
+﻿retworkx.bipartite\_layout
+==========================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: bipartite_layout

@@ -1,0 +1,6 @@
+retworkx.PyDAG.read\_edge\_list
+===============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.read_edge_list

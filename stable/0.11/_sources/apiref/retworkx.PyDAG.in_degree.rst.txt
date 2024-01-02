@@ -1,0 +1,6 @@
+retworkx.PyDAG.in\_degree
+=========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.in_degree

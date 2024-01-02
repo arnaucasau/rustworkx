@@ -1,0 +1,6 @@
+﻿retworkx.is\_isomorphic\_node\_match
+====================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: is_isomorphic_node_match

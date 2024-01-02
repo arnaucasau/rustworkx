@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.add\_edges\_from\_no\_data
+=============================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.add_edges_from_no_data

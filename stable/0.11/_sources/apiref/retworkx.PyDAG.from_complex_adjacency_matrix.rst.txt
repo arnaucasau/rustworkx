@@ -1,0 +1,6 @@
+retworkx.PyDAG.from\_complex\_adjacency\_matrix
+===============================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.from_complex_adjacency_matrix

@@ -1,0 +1,6 @@
+﻿retworkx.generators.generalized\_petersen\_graph
+================================================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: generalized_petersen_graph

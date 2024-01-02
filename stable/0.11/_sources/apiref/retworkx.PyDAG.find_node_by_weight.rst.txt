@@ -1,0 +1,6 @@
+retworkx.PyDAG.find\_node\_by\_weight
+=====================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.find_node_by_weight

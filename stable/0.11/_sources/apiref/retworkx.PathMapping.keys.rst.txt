@@ -1,0 +1,6 @@
+retworkx.PathMapping.keys
+=========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PathMapping.keys

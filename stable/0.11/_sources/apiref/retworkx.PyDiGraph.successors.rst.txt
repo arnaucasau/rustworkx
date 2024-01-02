@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.successors
+=============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.successors

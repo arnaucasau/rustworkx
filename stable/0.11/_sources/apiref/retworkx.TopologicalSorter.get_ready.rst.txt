@@ -1,0 +1,6 @@
+retworkx.TopologicalSorter.get\_ready
+=====================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: TopologicalSorter.get_ready

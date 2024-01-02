@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_shell\_layout
+===============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_shell_layout

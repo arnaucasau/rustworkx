@@ -1,0 +1,6 @@
+retworkx.CentralityMapping.values
+=================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: CentralityMapping.values

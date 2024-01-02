@@ -1,0 +1,6 @@
+retworkx.PyDAG.remove\_edge\_from\_index
+========================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.remove_edge_from_index

@@ -1,0 +1,6 @@
+﻿retworkx.metric\_closure
+========================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: metric_closure

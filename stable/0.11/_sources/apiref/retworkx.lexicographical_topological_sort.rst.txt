@@ -1,0 +1,6 @@
+﻿retworkx.lexicographical\_topological\_sort
+===========================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: lexicographical_topological_sort

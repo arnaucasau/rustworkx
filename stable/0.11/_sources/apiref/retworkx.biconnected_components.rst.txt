@@ -1,0 +1,6 @@
+﻿retworkx.biconnected\_components
+================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: biconnected_components

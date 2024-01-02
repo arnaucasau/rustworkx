@@ -1,0 +1,6 @@
+﻿retworkx.visualization.mpl\_draw
+================================
+
+.. currentmodule:: retworkx.visualization
+
+.. autofunction:: mpl_draw

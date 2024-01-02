@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.incident\_edge\_index\_map
+=============================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.incident_edge_index_map

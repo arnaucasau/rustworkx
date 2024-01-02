@@ -1,0 +1,500 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>retworkx &mdash; retworkx 0.11.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="retworkx Tutorials and Guides" href="tutorial/index.html" />
+    <link rel="prev" title="retworkx Documentation" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="rst-current-version-label">0.11</span>
+    <span class="rst-versions-dropdown-icon"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+          <dd><a class="version" href="/documentation/retworkx/index.html">Current Release</a></dd>
+          <dd><a class="version" href="/documentation/retworkx/dev/index.html">Development</a></dd>
+      <dt>Previous Releases</dt>
+        
+            <dd><a class="version" href="/documentation/retworkx/stable/0.8/index.html">0.8</a></dd>
+        
+            <dd><a class="version" href="/documentation/retworkx/stable/0.9/index.html">0.9</a></dd>
+        
+            <dd><a class="version" href="/documentation/retworkx/stable/0.10/index.html">0.10</a></dd>
+        
+            <dd><a class="version" href="/documentation/retworkx/stable/0.11/index.html">0.11</a></dd>
+        
+    </dl>
+  </div>
+  <script>
+    jQuery('.version').click((evt) => {
+      const hash = window.location.hash
+      const complete_url = evt.target.href + hash
+      window.location = complete_url
+      evt.preventDefault()
+    })
+  </script>
+</div>
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+                <div class="version">
+                  0.11.0
+                </div>
+              
+            
+
+            <div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search retworkx Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">Retworkx Tutorials and Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Retworkx API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization.html">Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="networkx.html">retworkx for NetworkX users</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+            retworkx 0.11.0 documentation
+        </a> &gt;
+      </li>
+
+        
+      <li>retworkx</li>
+    
+  </ul>
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content style-external-links">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <br><br><br><section id="retworkx">
+<h1>retworkx<a class="headerlink" href="#retworkx" title="Permalink to this heading">¶</a></h1>
+<a class="reference external image-reference" href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/github/license/Qiskit/retworkx.svg?style=popout-square" /></a>
+<a class="reference external image-reference" href="https://github.com/Qiskit/retworkx/actions/workflows/main.yml/badge.svg?branch=main"><img alt="Build Status" src="https://github.com/Qiskit/retworkx/actions/workflows/main.yml/badge.svg?branch=main" /></a>
+<a class="reference external image-reference" href="https://travis-ci.com/Qiskit/retworkx"><img alt="Build Status" src="https://img.shields.io/travis/com/Qiskit/retworkx/main.svg?style=popout-square" /></a>
+<a class="reference external image-reference" href="https://github.com/Qiskit/retworkx/releases"><img alt="" src="https://img.shields.io/github/release/Qiskit/retworkx.svg?style=popout-square" /></a>
+<a class="reference external image-reference" href="https://pypi.org/project/retworkx/"><img alt="" src="https://img.shields.io/pypi/dm/retworkx.svg?style=popout-square" /></a>
+<a class="reference external image-reference" href="https://coveralls.io/github/Qiskit/retworkx?branch=main"><img alt="Coverage Status" src="https://coveralls.io/repos/github/Qiskit/retworkx/badge.svg?branch=main" /></a>
+<a class="reference external image-reference" href="https://rust-lang.github.io/rfcs/2495-min-rust-version.html"><img alt="Minimum rustc 1.41.1" src="https://img.shields.io/badge/rustc-1.41.1+-blue.svg" /></a>
+<a class="reference external image-reference" href="https://arxiv.org/abs/2110.15221"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2110.15221-b31b1b.svg" /></a>
+<ul class="simple">
+<li><p>You can see the full rendered docs at:
+<a class="reference external" href="https://qiskit.org/documentation/retworkx">https://qiskit.org/documentation/retworkx</a></p></li>
+</ul>
+<p>retworkx is a general purpose graph library for python3 written in Rust to
+take advantage of the performance and safety that Rust provides. It was built
+as a replacement for <a class="reference external" href="https://qiskit.org/">qiskit</a>‘s previous (and current)
+networkx usage (hence the name) but is designed to provide a high
+performance general purpose graph library for any python application. The
+project was originally started to build a faster directed graph to use as the
+underlying data structure for the DAG at the center of
+<a class="reference external" href="https://github.com/Qiskit/qiskit-terra/">qiskit-terra</a>‘s transpiler, but it
+has since grown to cover all the graph usage in Qiskit and other applications.</p>
+<section id="installing-retworkx">
+<h2>Installing retworkx<a class="headerlink" href="#installing-retworkx" title="Permalink to this heading">¶</a></h2>
+<p>retworkx is published on pypi so on x86_64, i686, ppc64le, s390x, and
+aarch64 Linux systems, x86_64 on Mac OSX, and 32 and 64 bit Windows
+installing is as simple as running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>retworkx
+</pre></div>
+</div>
+<p>This will install a precompiled version of retworkx into your python
+environment.</p>
+<section id="installing-on-a-platform-without-precompiled-binaries">
+<h3>Installing on a platform without precompiled binaries<a class="headerlink" href="#installing-on-a-platform-without-precompiled-binaries" title="Permalink to this heading">¶</a></h3>
+<p>If there are no precompiled binaries published for your system you’ll have to
+build the package from source. However, to be able able to build the package
+from the published source package you need to have rust &gt;=1.41.1 installed (and
+also <a class="reference external" href="https://doc.rust-lang.org/cargo/">cargo</a> which is normally included with
+rust) You can use <a class="reference external" href="https://rustup.rs/">rustup</a> (a cross platform installer for
+rust) to make this simpler, or rely on
+<a class="reference external" href="https://forge.rust-lang.org/infra/other-installation-methods.html">other installation methods</a>.
+A source package is also published on pypi, so you still can also run the above
+<code class="docutils literal notranslate"><span class="pre">pip</span></code> command to install it. Once you have rust properly installed, running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>retworkx
+</pre></div>
+</div>
+<p>will build retworkx for your local system from the source package and install
+it just as it would if there was a prebuilt binary available.</p>
+<p>Note: To build from source you will need to ensure you have pip &gt;=19.0.0
+installed, which supports PEP-517, or that you have manually installed
+<code class="docutils literal notranslate"><span class="pre">setuptools-rust</span></code> prior to running <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">retworkx</span></code>. If you recieve an
+error about <code class="docutils literal notranslate"><span class="pre">setuptools-rust</span></code> not being found you should upgrade pip with
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">pip</span></code> or manually install <code class="docutils literal notranslate"><span class="pre">setuptools-rust</span></code> with
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">setuptools-rust</span></code> and try again.</p>
+</section>
+<section id="optional-dependencies">
+<h3>Optional dependencies<a class="headerlink" href="#optional-dependencies" title="Permalink to this heading">¶</a></h3>
+<p>If you’re planning to use the <code class="docutils literal notranslate"><span class="pre">retworkx.visualization</span></code> module you will need to
+install optional dependencies to use the functions. The matplotlib based drawer
+function <code class="docutils literal notranslate"><span class="pre">retworkx.visualization.mpl_draw</span></code> requires that the
+<a class="reference external" href="https://matplotlib.org/">matplotlib</a> library is installed. This can be
+installed with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">matplotlib</span></code> or when you’re installing retworkx with
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">'retworkx[mpl]'</span></code>. If you’re going to use the graphviz based drawer
+function <code class="docutils literal notranslate"><span class="pre">retworkx.visualization.graphviz_drawer</span></code> first you will need to install
+graphviz, instructions for this can be found here:
+<a class="reference external" href="https://graphviz.org/download/#executable-packages">https://graphviz.org/download/#executable-packages</a>. Then you
+will need to install the <a class="reference external" href="https://python-pillow.org/">pillow</a> Python library.
+This can be done either with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pillow</span></code> or when installing retworkx
+with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">'retworkx[graphviz]'</span></code>.</p>
+<p>If you would like to install all the optional Python dependencies when you
+install retworkx you can use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">'retworkx[all]'</span></code> to do this.</p>
+</section>
+</section>
+<section id="using-retworkx">
+<h2>Using retworkx<a class="headerlink" href="#using-retworkx" title="Permalink to this heading">¶</a></h2>
+<p>Once you have retworkx installed you can use it by importing retworkx.
+All the functions and graph classes are off the root of the package.
+For example, calculating the shortest path between A and C would be:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">retworkx</span>
+
+<span class="n">graph</span> <span class="o">=</span> <span class="n">retworkx</span><span class="o">.</span><span class="n">PyGraph</span><span class="p">()</span>
+
+<span class="c1"># Each time add node is called, it returns a new node index</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+
+<span class="c1"># add_edges_from takes tuples of node indices and weights,</span>
+<span class="c1"># and returns edge indices</span>
+<span class="n">graph</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">([(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">),</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">),</span> <span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)])</span>
+
+<span class="c1"># Returns the path A -&gt; B -&gt; C</span>
+<span class="n">retworkx</span><span class="o">.</span><span class="n">dijkstra_shortest_paths</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">weight_fn</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="building-from-source">
+<h2>Building from source<a class="headerlink" href="#building-from-source" title="Permalink to this heading">¶</a></h2>
+<p>The first step for building retworkx from source is to clone it locally
+with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Qiskit/retworkx.git
+</pre></div>
+</div>
+<p>retworkx uses <a class="reference external" href="https://github.com/pyo3/pyo3">PyO3</a> and
+<a class="reference external" href="https://github.com/PyO3/setuptools-rust">setuptools-rust</a> to build the
+python interface, which enables using standard python tooling to work. So,
+assuming you have rust installed, you can easily install retworkx into your
+python environment using <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Once you have a local clone of the repo, change
+your current working directory to the root of the repo. Then, you can install
+retworkx into your python env with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>.
+</pre></div>
+</div>
+<p>Assuming your current working directory is still the root of the repo.
+Otherwise you can run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">$PATH_TO_REPO_ROOT</span>
+</pre></div>
+</div>
+<p>which will install it the same way. Then retworkx is installed in your
+local python environment. There are 2 things to note when doing this
+though, first if you try to run python from the repo root using this
+method it will not work as you expect. There is a name conflict in the
+repo root because of the local python package shim used in building the
+package. Simply run your python scripts or programs using retworkx
+outside of the repo root. The second issue is that any local changes you
+make to the rust code will not be reflected live in your python environment,
+you’ll need to recompile retworkx by rerunning <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> to have any
+changes reflected in your python environment.</p>
+<section id="develop-mode">
+<h3>Develop Mode<a class="headerlink" href="#develop-mode" title="Permalink to this heading">¶</a></h3>
+<p>If you’d like to build retworkx in debug mode and use an interactive debugger
+while working on a change you can use <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">develop</span></code> to build
+and install retworkx in develop mode. This will build retworkx without
+optimizations and include debuginfo which can be handy for debugging. Do note
+that installing retworkx this way will be significantly slower then using
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> and should only be used for debugging/development.</p>
+<p>It’s worth noting that <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-e</span></code> does not work, as it will link the python
+packaging shim to your python environment but not build the retworkx binary. If
+you want to build retworkx in debug mode you have to use
+<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">develop</span></code>.</p>
+</section>
+</section>
+<section id="authors-and-citation">
+<h2>Authors and Citation<a class="headerlink" href="#authors-and-citation" title="Permalink to this heading">¶</a></h2>
+<p>retworkx is the work of <a class="reference external" href="https://github.com/Qiskit/retworkx/graphs/contributors">many people</a> who contribute
+to the project at different levels. If you use retworkx in your research, please cite our
+<a class="reference external" href="https://arxiv.org/abs/2110.15221">paper</a> as per the included <a class="reference external" href="CITATION.bib">BibTeX file</a>.</p>
+</section>
+<section id="community">
+<h2>Community<a class="headerlink" href="#community" title="Permalink to this heading">¶</a></h2>
+<p>Besides Github interactions (such as opening issues) there are two locations
+available to talk to other retworkx users and developers. The first is a
+public Slack channel in the Qiskit workspace,
+<a class="reference external" href="https://qiskit.slack.com/messages/retworkx/">#retworkx</a>. You can join the
+Qiskit Slack workspace <a class="reference external" href="http://ibm.co/joinqiskitslack">here</a>. Additionally,
+there is an IRC channel <code class="docutils literal notranslate"><span class="pre">#retworkx</span></code> on the <a class="reference external" href="https://www.oftc.net/">OFTC IRC network</a></p>
+</section>
+</section>
+
+
+             </article>
+             
+            </div>
+            <footer>
+<!-- USER FEEDBACK -->
+  
+
+  <!-- NEXT/PREVIOUS BUTTONS -->
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="tutorial/index.html" class="btn btn-neutral float-right" title="retworkx Tutorials and Guides" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-purple.svg" class="next-page"></a>
+    
+    
+      <a href="index.html" class="btn btn-neutral" title="retworkx Documentation" accesskey="p" rel="prev"><img src="_static/images/chevron-right-purple.svg" class="previous-page"> Previous</a>
+    
+  </div>
+
+  <div role="contentinfo">
+    <p>
+    <!-- SHOW QISKIT COPYRIGHT TEXT -->
+        &copy; Copyright 2021, retworkx Contributors.
+
+    <!-- SHOW DATE PAGE LAST UPDATED -->
+
+    </p>
+  </div>
+
+<!-- SHOW 'MADE WITH SPHINX' TEXT -->
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Sphinx</a> using <a href="https://github.com/Qiskit/qiskit_sphinx_theme">Qiskit Sphinx Theme </a> (based on <a href="https://github.com/pytorch/pytorch_sphinx_theme"> PyTorch Sphinx Theme</a>).
+      </div>
+     
+<br>
+</footer>
+
+<script>
+  function clicked(ctaType) {
+    document.getElementById('was-helpful-thank-you').style.visibility = 'visible';
+    window.trackCta(`Helpful - ${ctaType}`);
+  }
+</script>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">retworkx</a><ul>
+<li><a class="reference internal" href="#installing-retworkx">Installing retworkx</a><ul>
+<li><a class="reference internal" href="#installing-on-a-platform-without-precompiled-binaries">Installing on a platform without precompiled binaries</a></li>
+<li><a class="reference internal" href="#optional-dependencies">Optional dependencies</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#using-retworkx">Using retworkx</a></li>
+<li><a class="reference internal" href="#building-from-source">Building from source</a><ul>
+<li><a class="reference internal" href="#develop-mode">Develop Mode</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#authors-and-citation">Authors and Citation</a></li>
+<li><a class="reference internal" href="#community">Community</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+         <script src="_static/doctools.js"></script>
+         <script src="_static/sphinx_highlight.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+  <div>
+    <br>
+  </div>
+
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="header-logo" href="https://qiskit.org/" aria-label="PyTorch"></a>
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://retworkx.readthedocs.io/en/stable/">Qiskit Documentation</a>
+          </li>
+
+          <li>
+            <a href="https://qiskit.org/learn" target="_blank">Learning Resources</a>
+          </li>
+
+          <li>
+            <a href="https://qiskit.slack.com" target="_blank">Slack Support</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Qiskit/retworkx" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+      mainMenuDropdown.bind();
+      filterTags.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>

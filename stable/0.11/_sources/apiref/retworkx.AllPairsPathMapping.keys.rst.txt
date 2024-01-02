@@ -1,0 +1,6 @@
+retworkx.AllPairsPathMapping.keys
+=================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: AllPairsPathMapping.keys

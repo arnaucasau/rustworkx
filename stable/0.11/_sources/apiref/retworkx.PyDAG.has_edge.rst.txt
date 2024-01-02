@@ -1,0 +1,6 @@
+retworkx.PyDAG.has\_edge
+========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.has_edge

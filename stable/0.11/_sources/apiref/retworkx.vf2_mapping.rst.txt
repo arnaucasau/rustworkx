@@ -1,0 +1,6 @@
+﻿retworkx.vf2\_mapping
+=====================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: vf2_mapping

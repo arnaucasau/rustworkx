@@ -1,0 +1,6 @@
+retworkx.PyDAG.incident\_edge\_index\_map
+=========================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.incident_edge_index_map

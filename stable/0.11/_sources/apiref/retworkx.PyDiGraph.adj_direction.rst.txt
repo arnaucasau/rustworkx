@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.adj\_direction
+=================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.adj_direction

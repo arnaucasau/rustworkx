@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.get\_all\_edge\_data
+=======================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.get_all_edge_data

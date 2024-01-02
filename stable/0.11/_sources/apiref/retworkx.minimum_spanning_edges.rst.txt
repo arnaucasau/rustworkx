@@ -1,0 +1,6 @@
+﻿retworkx.minimum\_spanning\_edges
+=================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: minimum_spanning_edges

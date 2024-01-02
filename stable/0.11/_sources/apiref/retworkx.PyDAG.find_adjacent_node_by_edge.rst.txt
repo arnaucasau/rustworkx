@@ -1,0 +1,6 @@
+retworkx.PyDAG.find\_adjacent\_node\_by\_edge
+=============================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.find_adjacent_node_by_edge

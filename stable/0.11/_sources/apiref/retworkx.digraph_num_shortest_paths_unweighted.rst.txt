@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_num\_shortest\_paths\_unweighted
+==================================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_num_shortest_paths_unweighted

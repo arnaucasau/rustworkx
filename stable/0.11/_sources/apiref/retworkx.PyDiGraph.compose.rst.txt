@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.compose
+==========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.compose

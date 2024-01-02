@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.from\_adjacency\_matrix
+==========================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.from_adjacency_matrix

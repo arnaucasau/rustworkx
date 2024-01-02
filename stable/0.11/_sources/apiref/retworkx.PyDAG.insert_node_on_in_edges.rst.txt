@@ -1,0 +1,6 @@
+retworkx.PyDAG.insert\_node\_on\_in\_edges
+==========================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.insert_node_on_in_edges

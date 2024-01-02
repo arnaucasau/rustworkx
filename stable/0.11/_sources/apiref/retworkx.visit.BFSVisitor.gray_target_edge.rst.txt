@@ -1,0 +1,6 @@
+retworkx.visit.BFSVisitor.gray\_target\_edge
+============================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: BFSVisitor.gray_target_edge

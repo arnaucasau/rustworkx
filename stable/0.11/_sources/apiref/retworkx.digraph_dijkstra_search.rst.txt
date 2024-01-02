@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_dijkstra\_search
+==================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_dijkstra_search

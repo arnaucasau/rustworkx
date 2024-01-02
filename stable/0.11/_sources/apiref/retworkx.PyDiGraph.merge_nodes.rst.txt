@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.merge\_nodes
+===============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.merge_nodes

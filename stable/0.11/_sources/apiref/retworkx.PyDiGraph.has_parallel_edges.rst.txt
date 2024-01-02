@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.has\_parallel\_edges
+=======================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.has_parallel_edges

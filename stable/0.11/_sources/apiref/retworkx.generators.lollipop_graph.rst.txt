@@ -1,0 +1,6 @@
+﻿retworkx.generators.lollipop\_graph
+===================================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: lollipop_graph

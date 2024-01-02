@@ -1,0 +1,6 @@
+retworkx.PyGraph.in\_edges
+==========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.in_edges

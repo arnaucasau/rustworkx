@@ -1,0 +1,6 @@
+﻿retworkx.minimum\_spanning\_tree
+================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: minimum_spanning_tree

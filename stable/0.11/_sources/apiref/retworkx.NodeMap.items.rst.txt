@@ -1,0 +1,6 @@
+retworkx.NodeMap.items
+======================
+
+.. currentmodule:: retworkx
+
+.. automethod:: NodeMap.items

@@ -1,0 +1,6 @@
+﻿retworkx.is\_matching
+=====================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: is_matching

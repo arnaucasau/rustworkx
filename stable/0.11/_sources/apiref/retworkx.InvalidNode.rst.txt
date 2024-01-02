@@ -1,0 +1,6 @@
+﻿retworkx.InvalidNode
+====================
+
+.. currentmodule:: retworkx
+
+.. autoexception:: InvalidNode

@@ -1,0 +1,6 @@
+retworkx.PyDAG.to\_dot
+======================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.to_dot

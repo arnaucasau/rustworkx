@@ -1,0 +1,6 @@
+retworkx.PyDAG.find\_predecessors\_by\_edge
+===========================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.find_predecessors_by_edge

@@ -1,0 +1,6 @@
+﻿retworkx.strongly\_connected\_components
+========================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: strongly_connected_components

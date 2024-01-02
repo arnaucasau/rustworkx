@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.node\_indexes
+================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.node_indexes

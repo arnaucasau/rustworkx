@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_dfs\_edges
+============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_dfs_edges

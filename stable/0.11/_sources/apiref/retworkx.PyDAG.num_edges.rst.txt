@@ -1,0 +1,6 @@
+retworkx.PyDAG.num\_edges
+=========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.num_edges

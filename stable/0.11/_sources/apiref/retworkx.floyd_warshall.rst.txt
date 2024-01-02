@@ -1,0 +1,6 @@
+﻿retworkx.floyd\_warshall
+========================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: floyd_warshall

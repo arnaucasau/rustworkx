@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.contract\_nodes
+==================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.contract_nodes

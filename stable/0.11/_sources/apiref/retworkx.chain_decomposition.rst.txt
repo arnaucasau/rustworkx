@@ -1,0 +1,6 @@
+﻿retworkx.chain\_decomposition
+=============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: chain_decomposition

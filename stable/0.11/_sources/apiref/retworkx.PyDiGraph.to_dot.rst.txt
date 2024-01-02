@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.to\_dot
+==========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.to_dot

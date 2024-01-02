@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.substitute\_node\_with\_subgraph
+===================================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.substitute_node_with_subgraph

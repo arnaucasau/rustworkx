@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_is\_subgraph\_isomorphic
+==========================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_is_subgraph_isomorphic

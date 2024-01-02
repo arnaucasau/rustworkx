@@ -1,0 +1,1075 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Retworkx API Reference &mdash; retworkx 0.11.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/jupyter-sphinx.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PyGraph" href="apiref/retworkx.PyGraph.html" />
+    <link rel="prev" title="Working with Betweenness Centrality" href="tutorial/betweenness_centrality.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="rst-current-version-label">0.11</span>
+    <span class="rst-versions-dropdown-icon"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Versions</dt>
+          <dd><a class="version" href="/documentation/retworkx/index.html">Current Release</a></dd>
+          <dd><a class="version" href="/documentation/retworkx/dev/index.html">Development</a></dd>
+      <dt>Previous Releases</dt>
+        
+            <dd><a class="version" href="/documentation/retworkx/stable/0.8/index.html">0.8</a></dd>
+        
+            <dd><a class="version" href="/documentation/retworkx/stable/0.9/index.html">0.9</a></dd>
+        
+            <dd><a class="version" href="/documentation/retworkx/stable/0.10/index.html">0.10</a></dd>
+        
+            <dd><a class="version" href="/documentation/retworkx/stable/0.11/index.html">0.11</a></dd>
+        
+    </dl>
+  </div>
+  <script>
+    jQuery('.version').click((evt) => {
+      const hash = window.location.hash
+      const complete_url = evt.target.href + hash
+      window.location = complete_url
+      evt.preventDefault()
+    })
+  </script>
+</div>
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+                <div class="version">
+                  0.11.0
+                </div>
+              
+            
+
+            <div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search retworkx Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="README.html">Overview and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">Retworkx Tutorials and Guides</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Retworkx API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization.html">Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="networkx.html">retworkx for NetworkX users</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+            retworkx 0.11.0 documentation
+        </a> &gt;
+      </li>
+
+        
+      <li>Retworkx API Reference</li>
+    
+  </ul>
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content style-external-links">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <br><br><br><section id="retworkx-api-reference">
+<span id="retworkx"></span><h1>Retworkx API Reference<a class="headerlink" href="#retworkx-api-reference" title="Permalink to this heading">¶</a></h1>
+<section id="graph-classes">
+<h2>Graph Classes<a class="headerlink" href="#graph-classes" title="Permalink to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.PyGraph.html#retworkx.PyGraph" title="retworkx.PyGraph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.PyGraph</span></code></a>([multigraph])</p></td>
+<td><p>A class for creating undirected graphs</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.PyDiGraph.html#retworkx.PyDiGraph" title="retworkx.PyDiGraph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.PyDiGraph</span></code></a>([check_cycle, multigraph])</p></td>
+<td><p>A class for creating directed graphs</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.PyDAG.html#retworkx.PyDAG" title="retworkx.PyDAG"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.PyDAG</span></code></a>([check_cycle, multigraph])</p></td>
+<td><p>A class for creating direct acyclic graphs.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="algorithm-functions">
+<span id="algorithm-api"></span><h2>Algorithm Functions<a class="headerlink" href="#algorithm-functions" title="Permalink to this heading">¶</a></h2>
+<section id="shortest-paths">
+<span id="id1"></span><h3>Shortest Paths<a class="headerlink" href="#shortest-paths" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.dijkstra_shortest_paths.html#retworkx.dijkstra_shortest_paths" title="retworkx.dijkstra_shortest_paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.dijkstra_shortest_paths</span></code></a>()</p></td>
+<td><p>Find the shortest path from a node</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.dijkstra_shortest_path_lengths.html#retworkx.dijkstra_shortest_path_lengths" title="retworkx.dijkstra_shortest_path_lengths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.dijkstra_shortest_path_lengths</span></code></a>()</p></td>
+<td><p>Compute the lengths of the shortest paths for a graph object using Dijkstra's algorithm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.all_pairs_dijkstra_shortest_paths.html#retworkx.all_pairs_dijkstra_shortest_paths" title="retworkx.all_pairs_dijkstra_shortest_paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.all_pairs_dijkstra_shortest_paths</span></code></a>()</p></td>
+<td><p>For each node in the graph, finds the shortest paths to all others.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.all_pairs_dijkstra_path_lengths.html#retworkx.all_pairs_dijkstra_path_lengths" title="retworkx.all_pairs_dijkstra_path_lengths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.all_pairs_dijkstra_path_lengths</span></code></a>()</p></td>
+<td><p>For each node in the graph, calculates the lengths of the shortest paths to all others.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.distance_matrix.html#retworkx.distance_matrix" title="retworkx.distance_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.distance_matrix</span></code></a>()</p></td>
+<td><p>Get the distance matrix for a graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.floyd_warshall.html#retworkx.floyd_warshall" title="retworkx.floyd_warshall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.floyd_warshall</span></code></a>()</p></td>
+<td><p>Find all-pairs shortest path lengths using Floyd's algorithm</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.floyd_warshall_numpy.html#retworkx.floyd_warshall_numpy" title="retworkx.floyd_warshall_numpy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.floyd_warshall_numpy</span></code></a>()</p></td>
+<td><p>Find all-pairs shortest path lengths using Floyd's algorithm</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.astar_shortest_path.html#retworkx.astar_shortest_path" title="retworkx.astar_shortest_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.astar_shortest_path</span></code></a>()</p></td>
+<td><p>Compute the A* shortest path for a graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.k_shortest_path_lengths.html#retworkx.k_shortest_path_lengths" title="retworkx.k_shortest_path_lengths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.k_shortest_path_lengths</span></code></a>()</p></td>
+<td><p>Compute the length of the kth shortest path</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.num_shortest_paths_unweighted.html#retworkx.num_shortest_paths_unweighted" title="retworkx.num_shortest_paths_unweighted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.num_shortest_paths_unweighted</span></code></a>()</p></td>
+<td><p>Get the number of unweighted shortest paths from a source node</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.unweighted_average_shortest_path_length.html#retworkx.unweighted_average_shortest_path_length" title="retworkx.unweighted_average_shortest_path_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.unweighted_average_shortest_path_length</span></code></a>()</p></td>
+<td><p>Return the average shortest path length with unweighted edges.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="centrality">
+<span id="id2"></span><h3>Centrality<a class="headerlink" href="#centrality" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.betweenness_centrality.html#retworkx.betweenness_centrality" title="retworkx.betweenness_centrality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.betweenness_centrality</span></code></a>()</p></td>
+<td><p>Returns the betweenness centrality of each node in the graph.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="traversal">
+<span id="id3"></span><h3>Traversal<a class="headerlink" href="#traversal" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.dfs_edges.html#retworkx.dfs_edges" title="retworkx.dfs_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.dfs_edges</span></code></a>()</p></td>
+<td><p>Get an edge list of the tree edges from a depth-first traversal</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.dfs_search.html#retworkx.dfs_search" title="retworkx.dfs_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.dfs_search</span></code></a>()</p></td>
+<td><p>Depth-first traversal of a directed/undirected graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.bfs_successors.html#retworkx.bfs_successors" title="retworkx.bfs_successors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.bfs_successors</span></code></a>(graph, node, /)</p></td>
+<td><p>Return successors in a breadth-first-search from a source node.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.bfs_search.html#retworkx.bfs_search" title="retworkx.bfs_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.bfs_search</span></code></a>()</p></td>
+<td><p>Breadth-first traversal of a directed/undirected graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.dijkstra_search.html#retworkx.dijkstra_search" title="retworkx.dijkstra_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.dijkstra_search</span></code></a>()</p></td>
+<td><p>Dijkstra traversal of a graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.topological_sort.html#retworkx.topological_sort" title="retworkx.topological_sort"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.topological_sort</span></code></a>(graph, /)</p></td>
+<td><p>Return the topological sort of node indices from the provided graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.lexicographical_topological_sort.html#retworkx.lexicographical_topological_sort" title="retworkx.lexicographical_topological_sort"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.lexicographical_topological_sort</span></code></a>(...)</p></td>
+<td><p>Get the lexicographical topological sorted nodes from the provided DAG</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.descendants.html#retworkx.descendants" title="retworkx.descendants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.descendants</span></code></a>(graph, node, /)</p></td>
+<td><p>Return the descendants of a node in a graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.ancestors.html#retworkx.ancestors" title="retworkx.ancestors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.ancestors</span></code></a>(graph, node, /)</p></td>
+<td><p>Return the ancestors of a node in a graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.collect_runs.html#retworkx.collect_runs" title="retworkx.collect_runs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.collect_runs</span></code></a>(graph, filter)</p></td>
+<td><p>Collect runs that match a filter function</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.collect_bicolor_runs.html#retworkx.collect_bicolor_runs" title="retworkx.collect_bicolor_runs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.collect_bicolor_runs</span></code></a>(graph, ...)</p></td>
+<td><p>Collect runs that match a filter function given edge colors</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.visit.DFSVisitor.html#retworkx.visit.DFSVisitor" title="retworkx.visit.DFSVisitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.visit.DFSVisitor</span></code></a>()</p></td>
+<td><p>A visitor object that is invoked at the event-points inside the <a class="reference internal" href="apiref/retworkx.dfs_search.html#retworkx.dfs_search" title="retworkx.dfs_search"><code class="xref py py-func docutils literal notranslate"><span class="pre">dfs_search()</span></code></a> algorithm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.visit.BFSVisitor.html#retworkx.visit.BFSVisitor" title="retworkx.visit.BFSVisitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.visit.BFSVisitor</span></code></a>()</p></td>
+<td><p>A visitor object that is invoked at the event-points inside the <a class="reference internal" href="apiref/retworkx.bfs_search.html#retworkx.bfs_search" title="retworkx.bfs_search"><code class="xref py py-func docutils literal notranslate"><span class="pre">bfs_search()</span></code></a> algorithm.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.visit.DijkstraVisitor.html#retworkx.visit.DijkstraVisitor" title="retworkx.visit.DijkstraVisitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.visit.DijkstraVisitor</span></code></a>()</p></td>
+<td><p>A visitor object that is invoked at the event-points inside the <a class="reference internal" href="apiref/retworkx.dijkstra_search.html#retworkx.dijkstra_search" title="retworkx.dijkstra_search"><code class="xref py py-func docutils literal notranslate"><span class="pre">dijkstra_search()</span></code></a> algorithm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.TopologicalSorter.html#retworkx.TopologicalSorter" title="retworkx.TopologicalSorter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.TopologicalSorter</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Provides functionality to topologically sort a directed graph.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dag-algorithms">
+<span id="id4"></span><h3>DAG Algorithms<a class="headerlink" href="#dag-algorithms" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.dag_longest_path.html#retworkx.dag_longest_path" title="retworkx.dag_longest_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.dag_longest_path</span></code></a>(graph, /[, weight_fn])</p></td>
+<td><p>Find the longest path in a DAG</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.dag_longest_path_length.html#retworkx.dag_longest_path_length" title="retworkx.dag_longest_path_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.dag_longest_path_length</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Find the length of the longest path in a DAG</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.dag_weighted_longest_path.html#retworkx.dag_weighted_longest_path" title="retworkx.dag_weighted_longest_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.dag_weighted_longest_path</span></code></a>(graph, ...)</p></td>
+<td><p>Find the weighted longest path in a DAG</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.dag_weighted_longest_path_length.html#retworkx.dag_weighted_longest_path_length" title="retworkx.dag_weighted_longest_path_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.dag_weighted_longest_path_length</span></code></a>(...)</p></td>
+<td><p>Find the length of the weighted longest path in a DAG</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.is_directed_acyclic_graph.html#retworkx.is_directed_acyclic_graph" title="retworkx.is_directed_acyclic_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.is_directed_acyclic_graph</span></code></a>(graph, /)</p></td>
+<td><p>Check that the PyDiGraph or PyDAG doesn't have a cycle</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.layers.html#retworkx.layers" title="retworkx.layers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.layers</span></code></a>(dag, first_layer, /)</p></td>
+<td><p>Return a list of layers</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tree">
+<span id="id5"></span><h3>Tree<a class="headerlink" href="#tree" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.minimum_spanning_edges.html#retworkx.minimum_spanning_edges" title="retworkx.minimum_spanning_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.minimum_spanning_edges</span></code></a>(graph[, ...])</p></td>
+<td><p>Find the edges in the minimum spanning tree or forest of a graph using Kruskal's algorithm.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.minimum_spanning_tree.html#retworkx.minimum_spanning_tree" title="retworkx.minimum_spanning_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.minimum_spanning_tree</span></code></a>(graph[, ...])</p></td>
+<td><p>Find the minimum spanning tree or forest of a graph using Kruskal's algorithm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.steiner_tree.html#retworkx.steiner_tree" title="retworkx.steiner_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.steiner_tree</span></code></a>(graph, terminal_nodes, ...)</p></td>
+<td><p>Return an approximation to the minimum Steiner tree of a graph.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="isomorphism">
+<span id="id6"></span><h3>Isomorphism<a class="headerlink" href="#isomorphism" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.is_isomorphic.html#retworkx.is_isomorphic" title="retworkx.is_isomorphic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.is_isomorphic</span></code></a>()</p></td>
+<td><p>Determine if 2 graphs are isomorphic</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.is_subgraph_isomorphic.html#retworkx.is_subgraph_isomorphic" title="retworkx.is_subgraph_isomorphic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.is_subgraph_isomorphic</span></code></a>()</p></td>
+<td><p>Determine if 2 graphs are subgraph isomorphic</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.is_isomorphic_node_match.html#retworkx.is_isomorphic_node_match" title="retworkx.is_isomorphic_node_match"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.is_isomorphic_node_match</span></code></a>()</p></td>
+<td><p>Determine if 2 graphs are isomorphic</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.vf2_mapping.html#retworkx.vf2_mapping" title="retworkx.vf2_mapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.vf2_mapping</span></code></a>()</p></td>
+<td><p>Return an iterator over all vf2 mappings between two graphs.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="matching">
+<span id="id7"></span><h3>Matching<a class="headerlink" href="#matching" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.max_weight_matching.html#retworkx.max_weight_matching" title="retworkx.max_weight_matching"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.max_weight_matching</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Compute a maximum-weighted matching for a <a class="reference internal" href="apiref/retworkx.PyGraph.html#retworkx.PyGraph" title="retworkx.PyGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyGraph</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.is_matching.html#retworkx.is_matching" title="retworkx.is_matching"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.is_matching</span></code></a>(graph, matching, /)</p></td>
+<td><p>Check if matching is valid for graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.is_maximal_matching.html#retworkx.is_maximal_matching" title="retworkx.is_maximal_matching"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.is_maximal_matching</span></code></a>(graph, matching, /)</p></td>
+<td><p>Check if a matching is a maximal (<strong>not</strong> maximum) matching for a graph</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="connectivity-and-cycles">
+<span id="connectivity-cycle-finding"></span><h3>Connectivity and Cycles<a class="headerlink" href="#connectivity-and-cycles" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.number_connected_components.html#retworkx.number_connected_components" title="retworkx.number_connected_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.number_connected_components</span></code></a>(graph, /)</p></td>
+<td><p>Find the number of connected components in an undirected graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.connected_components.html#retworkx.connected_components" title="retworkx.connected_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.connected_components</span></code></a>(graph, /)</p></td>
+<td><p>Find the connected components in an undirected graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.node_connected_component.html#retworkx.node_connected_component" title="retworkx.node_connected_component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.node_connected_component</span></code></a>(graph, node, /)</p></td>
+<td><p>Returns the set of nodes in the component of graph containing <cite>node</cite>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.is_connected.html#retworkx.is_connected" title="retworkx.is_connected"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.is_connected</span></code></a>(graph, /)</p></td>
+<td><p>Check if the graph is connected.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.strongly_connected_components.html#retworkx.strongly_connected_components" title="retworkx.strongly_connected_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.strongly_connected_components</span></code></a>(graph, /)</p></td>
+<td><p>Compute the strongly connected components for a directed graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.number_weakly_connected_components.html#retworkx.number_weakly_connected_components" title="retworkx.number_weakly_connected_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.number_weakly_connected_components</span></code></a>(...)</p></td>
+<td><p>Find the number of weakly connected components in a directed graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.weakly_connected_components.html#retworkx.weakly_connected_components" title="retworkx.weakly_connected_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.weakly_connected_components</span></code></a>(graph, /)</p></td>
+<td><p>Find the weakly connected components in a directed graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.is_weakly_connected.html#retworkx.is_weakly_connected" title="retworkx.is_weakly_connected"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.is_weakly_connected</span></code></a>(graph, /)</p></td>
+<td><p>Check if the graph is weakly connected</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.cycle_basis.html#retworkx.cycle_basis" title="retworkx.cycle_basis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.cycle_basis</span></code></a>(graph, /[, root])</p></td>
+<td><p>Return a list of cycles which form a basis for cycles of a given PyGraph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_find_cycle.html#retworkx.digraph_find_cycle" title="retworkx.digraph_find_cycle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_find_cycle</span></code></a>(graph, /[, source])</p></td>
+<td><p>Return the first cycle encountered during DFS of a given PyDiGraph, empty list is returned if no cycle is found</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.articulation_points.html#retworkx.articulation_points" title="retworkx.articulation_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.articulation_points</span></code></a>(graph, /)</p></td>
+<td><p>Return the articulation points of an undirected graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.biconnected_components.html#retworkx.biconnected_components" title="retworkx.biconnected_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.biconnected_components</span></code></a>(graph, /)</p></td>
+<td><p>Return the biconnected components of an undirected graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.chain_decomposition.html#retworkx.chain_decomposition" title="retworkx.chain_decomposition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.chain_decomposition</span></code></a>(graph, /[, source])</p></td>
+<td><p>Returns the chain decomposition of a graph.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="graph-operations">
+<span id="graph-ops"></span><h3>Graph Operations<a class="headerlink" href="#graph-operations" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.complement.html#retworkx.complement" title="retworkx.complement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.complement</span></code></a>()</p></td>
+<td><p>Compute the complement of a graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.union.html#retworkx.union" title="retworkx.union"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.union</span></code></a>()</p></td>
+<td><p>Return a new graph by forming a union from two input graph objects</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.cartesian_product.html#retworkx.cartesian_product" title="retworkx.cartesian_product"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.cartesian_product</span></code></a>()</p></td>
+<td><p>Return a new graph by forming the cartesian product from two input graph objects</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="other-algorithm-functions">
+<span id="other-algorithms"></span><h3>Other Algorithm Functions<a class="headerlink" href="#other-algorithm-functions" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.adjacency_matrix.html#retworkx.adjacency_matrix" title="retworkx.adjacency_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.adjacency_matrix</span></code></a>()</p></td>
+<td><p>Return the adjacency matrix for a graph object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.all_simple_paths.html#retworkx.all_simple_paths" title="retworkx.all_simple_paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.all_simple_paths</span></code></a>()</p></td>
+<td><p>Return all simple paths between 2 nodes in a PyGraph object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.transitivity.html#retworkx.transitivity" title="retworkx.transitivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.transitivity</span></code></a>()</p></td>
+<td><p>Compute the transitivity of a graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.core_number.html#retworkx.core_number" title="retworkx.core_number"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.core_number</span></code></a>()</p></td>
+<td><p>Return the core number for each node in the graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_greedy_color.html#retworkx.graph_greedy_color" title="retworkx.graph_greedy_color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_greedy_color</span></code></a>(graph, /)</p></td>
+<td><p>Color a PyGraph using a largest_first strategy greedy graph coloring.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.metric_closure.html#retworkx.metric_closure" title="retworkx.metric_closure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.metric_closure</span></code></a>(graph, weight_fn, /)</p></td>
+<td><p>Return the metric closure of a graph</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="generators">
+<span id="generator-funcs"></span><h2>Generators<a class="headerlink" href="#generators" title="Permalink to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.cycle_graph.html#retworkx.generators.cycle_graph" title="retworkx.generators.cycle_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.cycle_graph</span></code></a>([num_nodes, ...])</p></td>
+<td><p>Generate an undirected cycle graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.directed_cycle_graph.html#retworkx.generators.directed_cycle_graph" title="retworkx.generators.directed_cycle_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.directed_cycle_graph</span></code></a>([...])</p></td>
+<td><p>Generate a cycle graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.path_graph.html#retworkx.generators.path_graph" title="retworkx.generators.path_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.path_graph</span></code></a>([num_nodes, ...])</p></td>
+<td><p>Generate an undirected path graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.directed_path_graph.html#retworkx.generators.directed_path_graph" title="retworkx.generators.directed_path_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.directed_path_graph</span></code></a>([...])</p></td>
+<td><p>Generate a directed path graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.star_graph.html#retworkx.generators.star_graph" title="retworkx.generators.star_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.star_graph</span></code></a>([num_nodes, ...])</p></td>
+<td><p>Generate an undirected star graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.directed_star_graph.html#retworkx.generators.directed_star_graph" title="retworkx.generators.directed_star_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.directed_star_graph</span></code></a>([...])</p></td>
+<td><p>Generate a directed star graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.mesh_graph.html#retworkx.generators.mesh_graph" title="retworkx.generators.mesh_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.mesh_graph</span></code></a>([num_nodes, ...])</p></td>
+<td><p>Generate an undirected mesh graph where every node is connected to every other</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.directed_mesh_graph.html#retworkx.generators.directed_mesh_graph" title="retworkx.generators.directed_mesh_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.directed_mesh_graph</span></code></a>([...])</p></td>
+<td><p>Generate a directed mesh graph where every node is connected to every other</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.grid_graph.html#retworkx.generators.grid_graph" title="retworkx.generators.grid_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.grid_graph</span></code></a>([rows, cols, ...])</p></td>
+<td><p>Generate an undirected grid graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.directed_grid_graph.html#retworkx.generators.directed_grid_graph" title="retworkx.generators.directed_grid_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.directed_grid_graph</span></code></a>([...])</p></td>
+<td><p>Generate a directed grid graph. The edges propagate towards right and</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.binomial_tree_graph.html#retworkx.generators.binomial_tree_graph" title="retworkx.generators.binomial_tree_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.binomial_tree_graph</span></code></a>(order, /)</p></td>
+<td><p>Generate an undirected binomial tree of order n recursively.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.directed_binomial_tree_graph.html#retworkx.generators.directed_binomial_tree_graph" title="retworkx.generators.directed_binomial_tree_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.directed_binomial_tree_graph</span></code></a>(...)</p></td>
+<td><p>Generate an undirected binomial tree of order n recursively.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.hexagonal_lattice_graph.html#retworkx.generators.hexagonal_lattice_graph" title="retworkx.generators.hexagonal_lattice_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.hexagonal_lattice_graph</span></code></a>(...)</p></td>
+<td><p>Generate an undirected hexagonal lattice graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.directed_hexagonal_lattice_graph.html#retworkx.generators.directed_hexagonal_lattice_graph" title="retworkx.generators.directed_hexagonal_lattice_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.directed_hexagonal_lattice_graph</span></code></a>(...)</p></td>
+<td><p>Generate a directed hexagonal lattice graph. The edges propagate towards</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.heavy_square_graph.html#retworkx.generators.heavy_square_graph" title="retworkx.generators.heavy_square_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.heavy_square_graph</span></code></a>(d, /)</p></td>
+<td><p>Generate an undirected heavy square graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.directed_heavy_square_graph.html#retworkx.generators.directed_heavy_square_graph" title="retworkx.generators.directed_heavy_square_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.directed_heavy_square_graph</span></code></a>(d, /)</p></td>
+<td><p>Generate an directed heavy square graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.heavy_hex_graph.html#retworkx.generators.heavy_hex_graph" title="retworkx.generators.heavy_hex_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.heavy_hex_graph</span></code></a>(d, /[, ...])</p></td>
+<td><p>Generate an undirected heavy hex graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.directed_heavy_hex_graph.html#retworkx.generators.directed_heavy_hex_graph" title="retworkx.generators.directed_heavy_hex_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.directed_heavy_hex_graph</span></code></a>(d, /)</p></td>
+<td><p>Generate a directed heavy hex graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.lollipop_graph.html#retworkx.generators.lollipop_graph" title="retworkx.generators.lollipop_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.lollipop_graph</span></code></a>([...])</p></td>
+<td><p>Generate an undirected lollipop graph where a mesh graph is connected to a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.generalized_petersen_graph.html#retworkx.generators.generalized_petersen_graph" title="retworkx.generators.generalized_petersen_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.generalized_petersen_graph</span></code></a>(n, k, /)</p></td>
+<td><p>Generate a generalized Petersen graph <span class="math notranslate nohighlight">\(G(n, k)\)</span> with <span class="math notranslate nohighlight">\(2n\)</span> nodes and <span class="math notranslate nohighlight">\(3n\)</span> edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.generators.barbell_graph.html#retworkx.generators.barbell_graph" title="retworkx.generators.barbell_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.barbell_graph</span></code></a>([...])</p></td>
+<td><p>Generate an undirected barbell graph where two identical mesh graphs are connected by a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.generators.full_rary_tree.html#retworkx.generators.full_rary_tree" title="retworkx.generators.full_rary_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.generators.full_rary_tree</span></code></a>(...[, ...])</p></td>
+<td><p>Creates a full r-ary tree of <cite>n</cite> nodes.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="random-graph-generator-functions">
+<span id="random-generators"></span><h2>Random Graph Generator Functions<a class="headerlink" href="#random-graph-generator-functions" title="Permalink to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.directed_gnp_random_graph.html#retworkx.directed_gnp_random_graph" title="retworkx.directed_gnp_random_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.directed_gnp_random_graph</span></code></a>(...[, seed])</p></td>
+<td><p>Return a <span class="math notranslate nohighlight">\(G_{np}\)</span> directed random graph, also known as an Erdős-Rényi graph or a binomial graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.undirected_gnp_random_graph.html#retworkx.undirected_gnp_random_graph" title="retworkx.undirected_gnp_random_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.undirected_gnp_random_graph</span></code></a>(...[, seed])</p></td>
+<td><p>Return a <span class="math notranslate nohighlight">\(G_{np}\)</span> random undirected graph, also known as an Erdős-Rényi graph or a binomial graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.directed_gnm_random_graph.html#retworkx.directed_gnm_random_graph" title="retworkx.directed_gnm_random_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.directed_gnm_random_graph</span></code></a>(...[, seed])</p></td>
+<td><p>Return a <span class="math notranslate nohighlight">\(G_{nm}\)</span> directed graph, also known as an Erdős-Rényi graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.undirected_gnm_random_graph.html#retworkx.undirected_gnm_random_graph" title="retworkx.undirected_gnm_random_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.undirected_gnm_random_graph</span></code></a>(...[, seed])</p></td>
+<td><p>Return a <span class="math notranslate nohighlight">\(G_{nm}\)</span> undirected graph, also known as an Erdős-Rényi graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.random_geometric_graph.html#retworkx.random_geometric_graph" title="retworkx.random_geometric_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.random_geometric_graph</span></code></a>(num_nodes, ...)</p></td>
+<td><p>Returns a random geometric graph in the unit cube of dimensions <cite>dim</cite>.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="layout-functions">
+<span id="id8"></span><h2>Layout Functions<a class="headerlink" href="#layout-functions" title="Permalink to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.random_layout.html#retworkx.random_layout" title="retworkx.random_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.random_layout</span></code></a>()</p></td>
+<td><p>Generate a random layout</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.spring_layout.html#retworkx.spring_layout" title="retworkx.spring_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.spring_layout</span></code></a>()</p></td>
+<td><p>Position nodes using Fruchterman-Reingold force-directed algorithm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.bipartite_layout.html#retworkx.bipartite_layout" title="retworkx.bipartite_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.bipartite_layout</span></code></a>()</p></td>
+<td><p>Generate a bipartite layout of the graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.circular_layout.html#retworkx.circular_layout" title="retworkx.circular_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.circular_layout</span></code></a>()</p></td>
+<td><p>Generate a circular layout of the graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.shell_layout.html#retworkx.shell_layout" title="retworkx.shell_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.shell_layout</span></code></a>()</p></td>
+<td><p>Generate a shell layout of the graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.spiral_layout.html#retworkx.spiral_layout" title="retworkx.spiral_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.spiral_layout</span></code></a>()</p></td>
+<td><p>Generate a spiral layout of the graph</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="converters">
+<span id="id9"></span><h2>Converters<a class="headerlink" href="#converters" title="Permalink to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.networkx_converter.html#retworkx.networkx_converter" title="retworkx.networkx_converter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.networkx_converter</span></code></a>(graph[, ...])</p></td>
+<td><p>Convert a networkx graph object into a retworkx graph object.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="api-functions-for-pydigraph">
+<span id="api-functions-pydigraph"></span><h2>API functions for PyDigraph<a class="headerlink" href="#api-functions-for-pydigraph" title="Permalink to this heading">¶</a></h2>
+<p>These functions are algorithm functions that are type specific for
+<a class="reference internal" href="apiref/retworkx.PyDiGraph.html#retworkx.PyDiGraph" title="retworkx.PyDiGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyDiGraph</span></code></a> or <a class="reference internal" href="apiref/retworkx.PyDAG.html#retworkx.PyDAG" title="retworkx.PyDAG"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyDAG</span></code></a> objects. Universal
+functions from Retworkx API that work for both graph types internally call
+the functions from the explicitly typed based on the data type.</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_is_isomorphic.html#retworkx.digraph_is_isomorphic" title="retworkx.digraph_is_isomorphic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_is_isomorphic</span></code></a>(first, second, /)</p></td>
+<td><p>Determine if 2 directed graphs are isomorphic</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_is_subgraph_isomorphic.html#retworkx.digraph_is_subgraph_isomorphic" title="retworkx.digraph_is_subgraph_isomorphic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_is_subgraph_isomorphic</span></code></a>(...)</p></td>
+<td><p>Determine if 2 directed graphs are subgraph - isomorphic</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_vf2_mapping.html#retworkx.digraph_vf2_mapping" title="retworkx.digraph_vf2_mapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_vf2_mapping</span></code></a>(first, second, /)</p></td>
+<td><p>Return an iterator over all vf2 mappings between two <a class="reference internal" href="apiref/retworkx.PyDiGraph.html#retworkx.PyDiGraph" title="retworkx.PyDiGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyDiGraph</span></code></a> objects</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_distance_matrix.html#retworkx.digraph_distance_matrix" title="retworkx.digraph_distance_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_distance_matrix</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Get the distance matrix for a directed graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_floyd_warshall.html#retworkx.digraph_floyd_warshall" title="retworkx.digraph_floyd_warshall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_floyd_warshall</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Find all-pairs shortest path lengths using Floyd's algorithm</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_floyd_warshall_numpy.html#retworkx.digraph_floyd_warshall_numpy" title="retworkx.digraph_floyd_warshall_numpy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_floyd_warshall_numpy</span></code></a>(graph, /)</p></td>
+<td><p>Find all-pairs shortest path lengths using Floyd's algorithm</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_adjacency_matrix.html#retworkx.digraph_adjacency_matrix" title="retworkx.digraph_adjacency_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_adjacency_matrix</span></code></a>(graph, /)</p></td>
+<td><p>Return the adjacency matrix for a PyDiGraph object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_all_simple_paths.html#retworkx.digraph_all_simple_paths" title="retworkx.digraph_all_simple_paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_all_simple_paths</span></code></a></p></td>
+<td><p>Return all simple paths between 2 nodes in a PyDiGraph object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_astar_shortest_path.html#retworkx.digraph_astar_shortest_path" title="retworkx.digraph_astar_shortest_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_astar_shortest_path</span></code></a>(graph, ...)</p></td>
+<td><p>Compute the A* shortest path for a PyDiGraph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_dijkstra_shortest_paths.html#retworkx.digraph_dijkstra_shortest_paths" title="retworkx.digraph_dijkstra_shortest_paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_dijkstra_shortest_paths</span></code></a></p></td>
+<td><p>Find the shortest path from a node</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_all_pairs_dijkstra_shortest_paths.html#retworkx.digraph_all_pairs_dijkstra_shortest_paths" title="retworkx.digraph_all_pairs_dijkstra_shortest_paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_all_pairs_dijkstra_shortest_paths</span></code></a>(...)</p></td>
+<td><p>For each node in the graph, finds the shortest paths to all others in a <a class="reference internal" href="apiref/retworkx.PyDiGraph.html#retworkx.PyDiGraph" title="retworkx.PyDiGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyDiGraph</span></code></a> object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_dijkstra_shortest_path_lengths.html#retworkx.digraph_dijkstra_shortest_path_lengths" title="retworkx.digraph_dijkstra_shortest_path_lengths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_dijkstra_shortest_path_lengths</span></code></a>(...)</p></td>
+<td><p>Compute the lengths of the shortest paths for a PyDiGraph object using Dijkstra's algorithm</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_all_pairs_dijkstra_path_lengths.html#retworkx.digraph_all_pairs_dijkstra_path_lengths" title="retworkx.digraph_all_pairs_dijkstra_path_lengths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_all_pairs_dijkstra_path_lengths</span></code></a>(...)</p></td>
+<td><p>For each node in the graph, calculates the lengths of the shortest paths to all others in a <a class="reference internal" href="apiref/retworkx.PyDiGraph.html#retworkx.PyDiGraph" title="retworkx.PyDiGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyDiGraph</span></code></a> object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_k_shortest_path_lengths.html#retworkx.digraph_k_shortest_path_lengths" title="retworkx.digraph_k_shortest_path_lengths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_k_shortest_path_lengths</span></code></a>(...)</p></td>
+<td><p>Compute the length of the kth shortest path</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_dfs_edges.html#retworkx.digraph_dfs_edges" title="retworkx.digraph_dfs_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_dfs_edges</span></code></a>(graph, /[, source])</p></td>
+<td><p>Get an edge list of the tree edges from a depth-first traversal</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_dfs_search.html#retworkx.digraph_dfs_search" title="retworkx.digraph_dfs_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_dfs_search</span></code></a>(graph, source, ...)</p></td>
+<td><p>Depth-first traversal of a directed graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_find_cycle.html#retworkx.digraph_find_cycle" title="retworkx.digraph_find_cycle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_find_cycle</span></code></a>(graph, /[, source])</p></td>
+<td><p>Return the first cycle encountered during DFS of a given PyDiGraph, empty list is returned if no cycle is found</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_transitivity.html#retworkx.digraph_transitivity" title="retworkx.digraph_transitivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_transitivity</span></code></a>(graph, /)</p></td>
+<td><p>Compute the transitivity of a directed graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_core_number.html#retworkx.digraph_core_number" title="retworkx.digraph_core_number"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_core_number</span></code></a>(graph, /)</p></td>
+<td><p>Return the core number for each node in the directed graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_complement.html#retworkx.digraph_complement" title="retworkx.digraph_complement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_complement</span></code></a>(graph, /)</p></td>
+<td><p>Compute the complement of a directed graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_union.html#retworkx.digraph_union" title="retworkx.digraph_union"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_union</span></code></a>(first, second, /[, ...])</p></td>
+<td><p>Return a new PyDiGraph by forming a union from two input PyDiGraph objects</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_cartesian_product.html#retworkx.digraph_cartesian_product" title="retworkx.digraph_cartesian_product"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_cartesian_product</span></code></a>(first, ...)</p></td>
+<td><p>Return a new PyDiGraph by forming the cartesian product from two input PyDiGraph objects</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_random_layout.html#retworkx.digraph_random_layout" title="retworkx.digraph_random_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_random_layout</span></code></a></p></td>
+<td><p>Generate a random layout</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_bipartite_layout.html#retworkx.digraph_bipartite_layout" title="retworkx.digraph_bipartite_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_bipartite_layout</span></code></a>(graph, ...)</p></td>
+<td><p>Generate a bipartite layout of the graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_circular_layout.html#retworkx.digraph_circular_layout" title="retworkx.digraph_circular_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_circular_layout</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Generate a circular layout of the graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_shell_layout.html#retworkx.digraph_shell_layout" title="retworkx.digraph_shell_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_shell_layout</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Generate a shell layout of the graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_spiral_layout.html#retworkx.digraph_spiral_layout" title="retworkx.digraph_spiral_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_spiral_layout</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Generate a spiral layout of the graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_spring_layout.html#retworkx.digraph_spring_layout" title="retworkx.digraph_spring_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_spring_layout</span></code></a>(graph[, pos, ...])</p></td>
+<td><p>Position nodes using Fruchterman-Reingold force-directed algorithm.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_num_shortest_paths_unweighted.html#retworkx.digraph_num_shortest_paths_unweighted" title="retworkx.digraph_num_shortest_paths_unweighted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_num_shortest_paths_unweighted</span></code></a>(...)</p></td>
+<td><p>Get the number of unweighted shortest paths from a source node</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_betweenness_centrality.html#retworkx.digraph_betweenness_centrality" title="retworkx.digraph_betweenness_centrality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_betweenness_centrality</span></code></a>(graph, /)</p></td>
+<td><p>Compute the betweenness centrality of all nodes in a PyDiGraph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_unweighted_average_shortest_path_length.html#retworkx.digraph_unweighted_average_shortest_path_length" title="retworkx.digraph_unweighted_average_shortest_path_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_unweighted_average_shortest_path_length</span></code></a>(...)</p></td>
+<td><p>Return the average shortest path length for a <a class="reference internal" href="apiref/retworkx.PyDiGraph.html#retworkx.PyDiGraph" title="retworkx.PyDiGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyDiGraph</span></code></a> with unweighted edges.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.digraph_bfs_search.html#retworkx.digraph_bfs_search" title="retworkx.digraph_bfs_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_bfs_search</span></code></a>(graph, source, ...)</p></td>
+<td><p>Breadth-first traversal of a directed graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.digraph_dijkstra_search.html#retworkx.digraph_dijkstra_search" title="retworkx.digraph_dijkstra_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.digraph_dijkstra_search</span></code></a>(graph, ...)</p></td>
+<td><p>Dijkstra traversal of a directed graph.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="api-functions-for-pygraph">
+<span id="api-functions-pygraph"></span><h2>API functions for PyGraph<a class="headerlink" href="#api-functions-for-pygraph" title="Permalink to this heading">¶</a></h2>
+<p>These functions are algorithm functions that are type specific for
+<a class="reference internal" href="apiref/retworkx.PyGraph.html#retworkx.PyGraph" title="retworkx.PyGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyGraph</span></code></a> objects. Universal functions from Retworkx API that
+work for both graph types internally call the functions from the explicitly
+typed API based on the data type.</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_is_isomorphic.html#retworkx.graph_is_isomorphic" title="retworkx.graph_is_isomorphic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_is_isomorphic</span></code></a>(first, second, /)</p></td>
+<td><p>Determine if 2 undirected graphs are isomorphic</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_is_subgraph_isomorphic.html#retworkx.graph_is_subgraph_isomorphic" title="retworkx.graph_is_subgraph_isomorphic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_is_subgraph_isomorphic</span></code></a>(first, ...)</p></td>
+<td><p>Determine if 2 undirected graphs are subgraph - isomorphic</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_vf2_mapping.html#retworkx.graph_vf2_mapping" title="retworkx.graph_vf2_mapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_vf2_mapping</span></code></a>(first, second, /)</p></td>
+<td><p>Return an iterator over all vf2 mappings between two <a class="reference internal" href="apiref/retworkx.PyGraph.html#retworkx.PyGraph" title="retworkx.PyGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyGraph</span></code></a> objects</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_distance_matrix.html#retworkx.graph_distance_matrix" title="retworkx.graph_distance_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_distance_matrix</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Get the distance matrix for an undirected graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_floyd_warshall.html#retworkx.graph_floyd_warshall" title="retworkx.graph_floyd_warshall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_floyd_warshall</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Find all-pairs shortest path lengths using Floyd's algorithm</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_floyd_warshall_numpy.html#retworkx.graph_floyd_warshall_numpy" title="retworkx.graph_floyd_warshall_numpy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_floyd_warshall_numpy</span></code></a>(graph, /)</p></td>
+<td><p>Find all-pairs shortest path lengths using Floyd's algorithm</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_adjacency_matrix.html#retworkx.graph_adjacency_matrix" title="retworkx.graph_adjacency_matrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_adjacency_matrix</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Return the adjacency matrix for a PyGraph class</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_all_simple_paths.html#retworkx.graph_all_simple_paths" title="retworkx.graph_all_simple_paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_all_simple_paths</span></code></a></p></td>
+<td><p>Return all simple paths between 2 nodes in a PyGraph object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_astar_shortest_path.html#retworkx.graph_astar_shortest_path" title="retworkx.graph_astar_shortest_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_astar_shortest_path</span></code></a>(graph, ...)</p></td>
+<td><p>Compute the A* shortest path for a PyGraph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_dijkstra_shortest_paths.html#retworkx.graph_dijkstra_shortest_paths" title="retworkx.graph_dijkstra_shortest_paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_dijkstra_shortest_paths</span></code></a></p></td>
+<td><p>Find the shortest path from a node</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_dijkstra_shortest_path_lengths.html#retworkx.graph_dijkstra_shortest_path_lengths" title="retworkx.graph_dijkstra_shortest_path_lengths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_dijkstra_shortest_path_lengths</span></code></a>(...)</p></td>
+<td><p>Compute the lengths of the shortest paths for a PyGraph object using Dijkstra's algorithm</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_all_pairs_dijkstra_shortest_paths.html#retworkx.graph_all_pairs_dijkstra_shortest_paths" title="retworkx.graph_all_pairs_dijkstra_shortest_paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_all_pairs_dijkstra_shortest_paths</span></code></a>(...)</p></td>
+<td><p>For each node in the graph, finds the shortest paths to all others in a <a class="reference internal" href="apiref/retworkx.PyGraph.html#retworkx.PyGraph" title="retworkx.PyGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyGraph</span></code></a> object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_k_shortest_path_lengths.html#retworkx.graph_k_shortest_path_lengths" title="retworkx.graph_k_shortest_path_lengths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_k_shortest_path_lengths</span></code></a>(...)</p></td>
+<td><p>Compute the length of the kth shortest path</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_all_pairs_dijkstra_path_lengths.html#retworkx.graph_all_pairs_dijkstra_path_lengths" title="retworkx.graph_all_pairs_dijkstra_path_lengths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_all_pairs_dijkstra_path_lengths</span></code></a>(...)</p></td>
+<td><p>For each node in the graph, calculates the lengths of the shortest paths to all others in a <a class="reference internal" href="apiref/retworkx.PyGraph.html#retworkx.PyGraph" title="retworkx.PyGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyGraph</span></code></a> object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_dfs_edges.html#retworkx.graph_dfs_edges" title="retworkx.graph_dfs_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_dfs_edges</span></code></a>(graph, /[, source])</p></td>
+<td><p>Get an edge list of the tree edges from a depth-first traversal</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_dfs_search.html#retworkx.graph_dfs_search" title="retworkx.graph_dfs_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_dfs_search</span></code></a>(graph, source, visitor)</p></td>
+<td><p>Depth-first traversal of an undirected graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_transitivity.html#retworkx.graph_transitivity" title="retworkx.graph_transitivity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_transitivity</span></code></a>(graph, /)</p></td>
+<td><p>Compute the transitivity of an undirected graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_core_number.html#retworkx.graph_core_number" title="retworkx.graph_core_number"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_core_number</span></code></a>(graph, /)</p></td>
+<td><p>Return the core number for each node in the graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_complement.html#retworkx.graph_complement" title="retworkx.graph_complement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_complement</span></code></a>(graph, /)</p></td>
+<td><p>Compute the complement of an undirected graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_union.html#retworkx.graph_union" title="retworkx.graph_union"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_union</span></code></a>(first, second, /[, ...])</p></td>
+<td><p>Return a new PyGraph by forming a union from two input PyGraph objects</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_cartesian_product.html#retworkx.graph_cartesian_product" title="retworkx.graph_cartesian_product"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_cartesian_product</span></code></a>(first, ...)</p></td>
+<td><p>Return a new PyGraph by forming the cartesian product from two input PyGraph objects</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_random_layout.html#retworkx.graph_random_layout" title="retworkx.graph_random_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_random_layout</span></code></a></p></td>
+<td><p>Generate a random layout</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_bipartite_layout.html#retworkx.graph_bipartite_layout" title="retworkx.graph_bipartite_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_bipartite_layout</span></code></a>(graph, ...)</p></td>
+<td><p>Generate a bipartite layout of the graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_circular_layout.html#retworkx.graph_circular_layout" title="retworkx.graph_circular_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_circular_layout</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Generate a circular layout of the graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_shell_layout.html#retworkx.graph_shell_layout" title="retworkx.graph_shell_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_shell_layout</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Generate a shell layout of the graph</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_spiral_layout.html#retworkx.graph_spiral_layout" title="retworkx.graph_spiral_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_spiral_layout</span></code></a>(graph, /[, ...])</p></td>
+<td><p>Generate a spiral layout of the graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_spring_layout.html#retworkx.graph_spring_layout" title="retworkx.graph_spring_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_spring_layout</span></code></a>(graph[, pos, ...])</p></td>
+<td><p>Position nodes using Fruchterman-Reingold force-directed algorithm.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_num_shortest_paths_unweighted.html#retworkx.graph_num_shortest_paths_unweighted" title="retworkx.graph_num_shortest_paths_unweighted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_num_shortest_paths_unweighted</span></code></a>(...)</p></td>
+<td><p>Get the number of unweighted shortest paths from a source node</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_betweenness_centrality.html#retworkx.graph_betweenness_centrality" title="retworkx.graph_betweenness_centrality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_betweenness_centrality</span></code></a>(graph, /)</p></td>
+<td><p>Compute the betweenness centrality of all nodes in a PyGraph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_unweighted_average_shortest_path_length.html#retworkx.graph_unweighted_average_shortest_path_length" title="retworkx.graph_unweighted_average_shortest_path_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_unweighted_average_shortest_path_length</span></code></a>(...)</p></td>
+<td><p>Return the average shortest path length for a <a class="reference internal" href="apiref/retworkx.PyGraph.html#retworkx.PyGraph" title="retworkx.PyGraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyGraph</span></code></a> with unweighted edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.graph_bfs_search.html#retworkx.graph_bfs_search" title="retworkx.graph_bfs_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_bfs_search</span></code></a>(graph, source, visitor)</p></td>
+<td><p>Breadth-first traversal of an undirected graph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.graph_dijkstra_search.html#retworkx.graph_dijkstra_search" title="retworkx.graph_dijkstra_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.graph_dijkstra_search</span></code></a>(graph, ...)</p></td>
+<td><p>Dijkstra traversal of an undirected graph.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.InvalidNode.html#retworkx.InvalidNode" title="retworkx.InvalidNode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.InvalidNode</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.DAGWouldCycle.html#retworkx.DAGWouldCycle" title="retworkx.DAGWouldCycle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.DAGWouldCycle</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.NoEdgeBetweenNodes.html#retworkx.NoEdgeBetweenNodes" title="retworkx.NoEdgeBetweenNodes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.NoEdgeBetweenNodes</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.DAGHasCycle.html#retworkx.DAGHasCycle" title="retworkx.DAGHasCycle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.DAGHasCycle</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.NoSuitableNeighbors.html#retworkx.NoSuitableNeighbors" title="retworkx.NoSuitableNeighbors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.NoSuitableNeighbors</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.NoPathFound.html#retworkx.NoPathFound" title="retworkx.NoPathFound"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.NoPathFound</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.NullGraph.html#retworkx.NullGraph" title="retworkx.NullGraph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.NullGraph</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.visit.StopSearch.html#retworkx.visit.StopSearch" title="retworkx.visit.StopSearch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.visit.StopSearch</span></code></a></p></td>
+<td><p>Stop graph traversal</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.visit.PruneSearch.html#retworkx.visit.PruneSearch" title="retworkx.visit.PruneSearch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.visit.PruneSearch</span></code></a></p></td>
+<td><p>Prune part of the search tree while traversing a graph.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="custom-return-types">
+<h2>Custom Return Types<a class="headerlink" href="#custom-return-types" title="Permalink to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.BFSSuccessors.html#retworkx.BFSSuccessors" title="retworkx.BFSSuccessors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.BFSSuccessors</span></code></a></p></td>
+<td><p>A custom class for the return from <a class="reference internal" href="apiref/retworkx.bfs_successors.html#retworkx.bfs_successors" title="retworkx.bfs_successors"><code class="xref py py-func docutils literal notranslate"><span class="pre">retworkx.bfs_successors()</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.NodeIndices.html#retworkx.NodeIndices" title="retworkx.NodeIndices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.NodeIndices</span></code></a></p></td>
+<td><p>A custom class for the return of node indices</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.EdgeIndices.html#retworkx.EdgeIndices" title="retworkx.EdgeIndices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.EdgeIndices</span></code></a></p></td>
+<td><p>A custom class for the return of edge indices</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.EdgeList.html#retworkx.EdgeList" title="retworkx.EdgeList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.EdgeList</span></code></a></p></td>
+<td><p>A custom class for the return of edge lists</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.WeightedEdgeList.html#retworkx.WeightedEdgeList" title="retworkx.WeightedEdgeList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.WeightedEdgeList</span></code></a></p></td>
+<td><p>A custom class for the return of edge lists with weights</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.EdgeIndexMap.html#retworkx.EdgeIndexMap" title="retworkx.EdgeIndexMap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.EdgeIndexMap</span></code></a></p></td>
+<td><p>A class representing a mapping of edge indices to a tuple of node indices and weight/data payload</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.PathMapping.html#retworkx.PathMapping" title="retworkx.PathMapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.PathMapping</span></code></a></p></td>
+<td><p>A custom class for the return of paths to target nodes</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.PathLengthMapping.html#retworkx.PathLengthMapping" title="retworkx.PathLengthMapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.PathLengthMapping</span></code></a></p></td>
+<td><p>A custom class for the return of path lengths to target nodes</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.Pos2DMapping.html#retworkx.Pos2DMapping" title="retworkx.Pos2DMapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.Pos2DMapping</span></code></a></p></td>
+<td><p>A class representing a mapping of node indices to 2D positions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.AllPairsPathMapping.html#retworkx.AllPairsPathMapping" title="retworkx.AllPairsPathMapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.AllPairsPathMapping</span></code></a></p></td>
+<td><p>A custom class for the return of paths to target nodes from all nodes</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.AllPairsPathLengthMapping.html#retworkx.AllPairsPathLengthMapping" title="retworkx.AllPairsPathLengthMapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.AllPairsPathLengthMapping</span></code></a></p></td>
+<td><p>A custom class for the return of path lengths to target nodes from all nodes</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.CentralityMapping.html#retworkx.CentralityMapping" title="retworkx.CentralityMapping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.CentralityMapping</span></code></a></p></td>
+<td><p>A custom class for the return of centralities at target nodes</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.Chains.html#retworkx.Chains" title="retworkx.Chains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.Chains</span></code></a></p></td>
+<td><p>A custom class for the return of a list of list of edges.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.NodeMap.html#retworkx.NodeMap" title="retworkx.NodeMap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.NodeMap</span></code></a></p></td>
+<td><p>A class representing a mapping of node indices to node indices</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="apiref/retworkx.ProductNodeMap.html#retworkx.ProductNodeMap" title="retworkx.ProductNodeMap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.ProductNodeMap</span></code></a></p></td>
+<td><p>A class representing a mapping of tuple of node indices to node indices.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="apiref/retworkx.BiconnectedComponents.html#retworkx.BiconnectedComponents" title="retworkx.BiconnectedComponents"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retworkx.BiconnectedComponents</span></code></a></p></td>
+<td><p>A class representing a mapping of edge endpoints to biconnected component number that the edge belongs.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+             </article>
+             
+            </div>
+            <footer>
+<!-- USER FEEDBACK -->
+  
+
+  <!-- NEXT/PREVIOUS BUTTONS -->
+  <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+      <a href="apiref/retworkx.PyGraph.html" class="btn btn-neutral float-right" title="PyGraph" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-purple.svg" class="next-page"></a>
+    
+    
+      <a href="tutorial/betweenness_centrality.html" class="btn btn-neutral" title="Working with Betweenness Centrality" accesskey="p" rel="prev"><img src="_static/images/chevron-right-purple.svg" class="previous-page"> Previous</a>
+    
+  </div>
+
+  <div role="contentinfo">
+    <p>
+    <!-- SHOW QISKIT COPYRIGHT TEXT -->
+        &copy; Copyright 2021, retworkx Contributors.
+
+    <!-- SHOW DATE PAGE LAST UPDATED -->
+
+    </p>
+  </div>
+
+<!-- SHOW 'MADE WITH SPHINX' TEXT -->
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Sphinx</a> using <a href="https://github.com/Qiskit/qiskit_sphinx_theme">Qiskit Sphinx Theme </a> (based on <a href="https://github.com/pytorch/pytorch_sphinx_theme"> PyTorch Sphinx Theme</a>).
+      </div>
+     
+<br>
+</footer>
+
+<script>
+  function clicked(ctaType) {
+    document.getElementById('was-helpful-thank-you').style.visibility = 'visible';
+    window.trackCta(`Helpful - ${ctaType}`);
+  }
+</script>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">Retworkx API Reference</a><ul>
+<li><a class="reference internal" href="#graph-classes">Graph Classes</a></li>
+<li><a class="reference internal" href="#algorithm-functions">Algorithm Functions</a><ul>
+<li><a class="reference internal" href="#shortest-paths">Shortest Paths</a></li>
+<li><a class="reference internal" href="#centrality">Centrality</a></li>
+<li><a class="reference internal" href="#traversal">Traversal</a></li>
+<li><a class="reference internal" href="#dag-algorithms">DAG Algorithms</a></li>
+<li><a class="reference internal" href="#tree">Tree</a></li>
+<li><a class="reference internal" href="#isomorphism">Isomorphism</a></li>
+<li><a class="reference internal" href="#matching">Matching</a></li>
+<li><a class="reference internal" href="#connectivity-and-cycles">Connectivity and Cycles</a></li>
+<li><a class="reference internal" href="#graph-operations">Graph Operations</a></li>
+<li><a class="reference internal" href="#other-algorithm-functions">Other Algorithm Functions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#generators">Generators</a></li>
+<li><a class="reference internal" href="#random-graph-generator-functions">Random Graph Generator Functions</a></li>
+<li><a class="reference internal" href="#layout-functions">Layout Functions</a></li>
+<li><a class="reference internal" href="#converters">Converters</a></li>
+<li><a class="reference internal" href="#api-functions-for-pydigraph">API functions for PyDigraph</a></li>
+<li><a class="reference internal" href="#api-functions-for-pygraph">API functions for PyGraph</a></li>
+<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#custom-return-types">Custom Return Types</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+         <script src="_static/doctools.js"></script>
+         <script src="_static/sphinx_highlight.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+  <div>
+    <br>
+  </div>
+
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="header-logo" href="https://qiskit.org/" aria-label="PyTorch"></a>
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://retworkx.readthedocs.io/en/stable/">Qiskit Documentation</a>
+          </li>
+
+          <li>
+            <a href="https://qiskit.org/learn" target="_blank">Learning Resources</a>
+          </li>
+
+          <li>
+            <a href="https://qiskit.slack.com" target="_blank">Slack Support</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Qiskit/retworkx" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+      mainMenuDropdown.bind();
+      filterTags.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>

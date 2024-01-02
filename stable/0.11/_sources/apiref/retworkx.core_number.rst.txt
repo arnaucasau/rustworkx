@@ -1,0 +1,6 @@
+﻿retworkx.core\_number
+=====================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: core_number

@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.neighbors
+============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.neighbors

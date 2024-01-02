@@ -1,0 +1,6 @@
+retworkx.BiconnectedComponents.values
+=====================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: BiconnectedComponents.values

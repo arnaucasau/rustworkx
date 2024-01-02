@@ -1,0 +1,6 @@
+retworkx.PyGraph.remove\_nodes\_from
+====================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.remove_nodes_from

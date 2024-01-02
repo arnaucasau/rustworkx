@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.is\_symmetric
+================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.is_symmetric

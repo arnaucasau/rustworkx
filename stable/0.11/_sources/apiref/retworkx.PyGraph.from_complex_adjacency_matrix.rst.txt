@@ -1,0 +1,6 @@
+retworkx.PyGraph.from\_complex\_adjacency\_matrix
+=================================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.from_complex_adjacency_matrix

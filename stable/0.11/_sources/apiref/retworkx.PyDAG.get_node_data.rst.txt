@@ -1,0 +1,6 @@
+retworkx.PyDAG.get\_node\_data
+==============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.get_node_data

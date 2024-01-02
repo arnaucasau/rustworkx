@@ -1,0 +1,6 @@
+retworkx.PyDAG.get\_all\_edge\_data
+===================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.get_all_edge_data

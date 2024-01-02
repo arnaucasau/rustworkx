@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.has\_edge
+============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.has_edge

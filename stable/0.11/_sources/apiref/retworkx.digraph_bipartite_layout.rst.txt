@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_bipartite\_layout
+===================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_bipartite_layout

@@ -1,0 +1,6 @@
+retworkx.PyDAG.get\_edge\_endpoints\_by\_index
+==============================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.get_edge_endpoints_by_index

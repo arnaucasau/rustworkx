@@ -1,0 +1,6 @@
+﻿retworkx.visualization.graphviz\_draw
+=====================================
+
+.. currentmodule:: retworkx.visualization
+
+.. autofunction:: graphviz_draw

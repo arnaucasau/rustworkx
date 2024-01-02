@@ -1,0 +1,6 @@
+﻿retworkx.max\_weight\_matching
+==============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: max_weight_matching

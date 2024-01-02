@@ -1,0 +1,6 @@
+retworkx.visit.DijkstraVisitor.examine\_edge
+============================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: DijkstraVisitor.examine_edge

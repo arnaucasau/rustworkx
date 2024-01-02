@@ -1,0 +1,6 @@
+﻿retworkx.node\_connected\_component
+===================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: node_connected_component

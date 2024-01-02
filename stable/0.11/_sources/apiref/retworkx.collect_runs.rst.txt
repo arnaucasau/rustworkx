@@ -1,0 +1,6 @@
+﻿retworkx.collect\_runs
+======================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: collect_runs

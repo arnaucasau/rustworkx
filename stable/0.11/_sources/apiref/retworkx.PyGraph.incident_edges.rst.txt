@@ -1,0 +1,6 @@
+retworkx.PyGraph.incident\_edges
+================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.incident_edges

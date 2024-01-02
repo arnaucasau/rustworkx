@@ -1,0 +1,6 @@
+﻿retworkx.visit.StopSearch
+=========================
+
+.. currentmodule:: retworkx.visit
+
+.. autoexception:: StopSearch

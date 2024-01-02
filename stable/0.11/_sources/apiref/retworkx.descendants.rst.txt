@@ -1,0 +1,6 @@
+﻿retworkx.descendants
+====================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: descendants

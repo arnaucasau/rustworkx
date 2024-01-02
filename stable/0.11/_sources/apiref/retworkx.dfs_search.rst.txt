@@ -1,0 +1,6 @@
+﻿retworkx.dfs\_search
+====================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: dfs_search

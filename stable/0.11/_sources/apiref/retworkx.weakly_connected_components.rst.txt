@@ -1,0 +1,6 @@
+﻿retworkx.weakly\_connected\_components
+======================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: weakly_connected_components

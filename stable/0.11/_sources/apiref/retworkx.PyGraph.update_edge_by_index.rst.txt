@@ -1,0 +1,6 @@
+retworkx.PyGraph.update\_edge\_by\_index
+========================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.update_edge_by_index

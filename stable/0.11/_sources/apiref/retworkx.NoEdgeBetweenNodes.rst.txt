@@ -1,0 +1,6 @@
+﻿retworkx.NoEdgeBetweenNodes
+===========================
+
+.. currentmodule:: retworkx
+
+.. autoexception:: NoEdgeBetweenNodes

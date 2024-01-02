@@ -1,0 +1,6 @@
+retworkx.PyGraph.edge\_index\_map
+=================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.edge_index_map

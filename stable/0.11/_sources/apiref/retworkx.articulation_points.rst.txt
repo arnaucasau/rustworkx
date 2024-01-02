@@ -1,0 +1,6 @@
+﻿retworkx.articulation\_points
+=============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: articulation_points

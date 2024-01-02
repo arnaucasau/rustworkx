@@ -1,0 +1,6 @@
+﻿retworkx.graph\_core\_number
+============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: graph_core_number

@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.remove\_edge\_from\_index
+============================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.remove_edge_from_index

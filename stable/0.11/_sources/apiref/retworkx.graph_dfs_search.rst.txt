@@ -1,0 +1,6 @@
+﻿retworkx.graph\_dfs\_search
+===========================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: graph_dfs_search

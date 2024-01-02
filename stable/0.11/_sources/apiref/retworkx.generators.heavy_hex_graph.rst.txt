@@ -1,0 +1,6 @@
+﻿retworkx.generators.heavy\_hex\_graph
+=====================================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: heavy_hex_graph

@@ -1,0 +1,6 @@
+retworkx.EdgeIndexMap.items
+===========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: EdgeIndexMap.items

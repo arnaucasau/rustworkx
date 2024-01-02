@@ -1,0 +1,6 @@
+﻿retworkx.astar\_shortest\_path
+==============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: astar_shortest_path

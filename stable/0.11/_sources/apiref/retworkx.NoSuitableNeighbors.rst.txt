@@ -1,0 +1,6 @@
+﻿retworkx.NoSuitableNeighbors
+============================
+
+.. currentmodule:: retworkx
+
+.. autoexception:: NoSuitableNeighbors

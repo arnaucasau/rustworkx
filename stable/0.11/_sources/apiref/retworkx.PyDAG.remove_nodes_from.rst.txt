@@ -1,0 +1,6 @@
+retworkx.PyDAG.remove\_nodes\_from
+==================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.remove_nodes_from

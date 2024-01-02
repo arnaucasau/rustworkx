@@ -1,0 +1,6 @@
+retworkx.PyDAG.predecessor\_indices
+===================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.predecessor_indices

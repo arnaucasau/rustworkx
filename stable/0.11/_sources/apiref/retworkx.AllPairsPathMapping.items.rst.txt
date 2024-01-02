@@ -1,0 +1,6 @@
+retworkx.AllPairsPathMapping.items
+==================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: AllPairsPathMapping.items

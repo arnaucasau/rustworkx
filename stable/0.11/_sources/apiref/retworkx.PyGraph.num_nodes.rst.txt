@@ -1,0 +1,6 @@
+retworkx.PyGraph.num\_nodes
+===========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.num_nodes

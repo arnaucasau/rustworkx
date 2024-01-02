@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_dfs\_search
+=============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_dfs_search

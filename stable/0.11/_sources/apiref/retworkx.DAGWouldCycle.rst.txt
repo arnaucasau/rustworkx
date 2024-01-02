@@ -1,0 +1,6 @@
+﻿retworkx.DAGWouldCycle
+======================
+
+.. currentmodule:: retworkx
+
+.. autoexception:: DAGWouldCycle

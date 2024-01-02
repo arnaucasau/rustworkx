@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.adj
+======================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.adj

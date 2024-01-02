@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.to\_undirected
+=================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.to_undirected

@@ -1,0 +1,10 @@
+﻿WeightedEdgeList
+================
+
+.. currentmodule:: retworkx
+
+.. autoclass:: WeightedEdgeList
+   :no-members:
+   :show-inheritance:
+
+

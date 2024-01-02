@@ -1,0 +1,6 @@
+﻿retworkx.graph\_num\_shortest\_paths\_unweighted
+================================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: graph_num_shortest_paths_unweighted

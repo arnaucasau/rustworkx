@@ -1,0 +1,6 @@
+﻿retworkx.is\_connected
+======================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: is_connected

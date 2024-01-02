@@ -1,0 +1,6 @@
+﻿retworkx.generators.star\_graph
+===============================
+
+.. currentmodule:: retworkx.generators
+
+.. autofunction:: star_graph

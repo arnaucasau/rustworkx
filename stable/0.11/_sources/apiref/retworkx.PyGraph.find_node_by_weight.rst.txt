@@ -1,0 +1,6 @@
+retworkx.PyGraph.find\_node\_by\_weight
+=======================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.find_node_by_weight

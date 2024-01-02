@@ -1,0 +1,6 @@
+﻿retworkx.is\_subgraph\_isomorphic
+=================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: is_subgraph_isomorphic

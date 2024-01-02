@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_all\_simple\_paths
+====================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_all_simple_paths

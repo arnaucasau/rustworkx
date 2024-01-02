@@ -1,0 +1,6 @@
+retworkx.visit.DijkstraVisitor.finish\_vertex
+=============================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: DijkstraVisitor.finish_vertex

@@ -1,0 +1,10 @@
+﻿EdgeIndices
+===========
+
+.. currentmodule:: retworkx
+
+.. autoclass:: EdgeIndices
+   :no-members:
+   :show-inheritance:
+
+

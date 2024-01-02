@@ -1,0 +1,6 @@
+retworkx.visit.DFSVisitor.discover\_vertex
+==========================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: DFSVisitor.discover_vertex

@@ -1,0 +1,6 @@
+retworkx.PyGraph.weighted\_edge\_list
+=====================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.weighted_edge_list

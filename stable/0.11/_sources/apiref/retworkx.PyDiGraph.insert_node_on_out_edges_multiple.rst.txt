@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.insert\_node\_on\_out\_edges\_multiple
+=========================================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.insert_node_on_out_edges_multiple

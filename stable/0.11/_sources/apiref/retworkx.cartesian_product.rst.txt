@@ -1,0 +1,6 @@
+﻿retworkx.cartesian\_product
+===========================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: cartesian_product

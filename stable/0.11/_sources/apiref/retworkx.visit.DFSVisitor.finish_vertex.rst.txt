@@ -1,0 +1,6 @@
+retworkx.visit.DFSVisitor.finish\_vertex
+========================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: DFSVisitor.finish_vertex

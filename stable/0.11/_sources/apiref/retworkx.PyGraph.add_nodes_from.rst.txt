@@ -1,0 +1,6 @@
+retworkx.PyGraph.add\_nodes\_from
+=================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyGraph.add_nodes_from

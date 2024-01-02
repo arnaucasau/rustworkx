@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.nodes
+========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.nodes

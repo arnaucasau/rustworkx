@@ -1,0 +1,10 @@
+﻿EdgeList
+========
+
+.. currentmodule:: retworkx
+
+.. autoclass:: EdgeList
+   :no-members:
+   :show-inheritance:
+
+

@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.find\_predecessors\_by\_edge
+===============================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.find_predecessors_by_edge

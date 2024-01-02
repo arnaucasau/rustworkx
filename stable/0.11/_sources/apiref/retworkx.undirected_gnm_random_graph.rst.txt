@@ -1,0 +1,6 @@
+﻿retworkx.undirected\_gnm\_random\_graph
+=======================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: undirected_gnm_random_graph

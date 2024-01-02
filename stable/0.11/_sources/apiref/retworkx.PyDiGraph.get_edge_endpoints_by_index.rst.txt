@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.get\_edge\_endpoints\_by\_index
+==================================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.get_edge_endpoints_by_index

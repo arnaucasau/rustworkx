@@ -1,0 +1,6 @@
+retworkx.PyDAG.add\_child
+=========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.add_child

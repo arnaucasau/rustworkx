@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.edge\_indices
+================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.edge_indices

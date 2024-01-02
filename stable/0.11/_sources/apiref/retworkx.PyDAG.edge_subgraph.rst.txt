@@ -1,0 +1,6 @@
+retworkx.PyDAG.edge\_subgraph
+=============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.edge_subgraph

@@ -1,0 +1,6 @@
+retworkx.PathLengthMapping.items
+================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PathLengthMapping.items

@@ -1,0 +1,6 @@
+retworkx.PyDAG.successor\_indices
+=================================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.successor_indices

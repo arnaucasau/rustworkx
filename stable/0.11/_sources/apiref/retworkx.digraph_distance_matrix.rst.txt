@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_distance\_matrix
+==================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_distance_matrix

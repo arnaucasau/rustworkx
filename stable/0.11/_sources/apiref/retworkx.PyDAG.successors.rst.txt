@@ -1,0 +1,6 @@
+retworkx.PyDAG.successors
+=========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.successors

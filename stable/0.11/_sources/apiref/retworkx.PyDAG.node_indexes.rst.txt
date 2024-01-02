@@ -1,0 +1,6 @@
+retworkx.PyDAG.node\_indexes
+============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.node_indexes

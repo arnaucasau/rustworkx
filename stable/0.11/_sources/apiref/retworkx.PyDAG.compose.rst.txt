@@ -1,0 +1,6 @@
+retworkx.PyDAG.compose
+======================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.compose

@@ -1,0 +1,6 @@
+﻿retworkx.graph\_bipartite\_layout
+=================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: graph_bipartite_layout

@@ -1,0 +1,6 @@
+retworkx.visit.BFSVisitor.non\_tree\_edge
+=========================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: BFSVisitor.non_tree_edge

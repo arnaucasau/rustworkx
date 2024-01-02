@@ -1,0 +1,6 @@
+﻿retworkx.is\_directed\_acyclic\_graph
+=====================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: is_directed_acyclic_graph

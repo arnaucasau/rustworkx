@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_core\_number
+==============================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_core_number

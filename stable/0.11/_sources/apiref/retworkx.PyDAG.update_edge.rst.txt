@@ -1,0 +1,6 @@
+retworkx.PyDAG.update\_edge
+===========================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDAG.update_edge

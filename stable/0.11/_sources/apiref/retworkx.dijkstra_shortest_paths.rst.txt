@@ -1,0 +1,6 @@
+﻿retworkx.dijkstra\_shortest\_paths
+==================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: dijkstra_shortest_paths

@@ -1,0 +1,6 @@
+﻿retworkx.digraph\_random\_layout
+================================
+
+.. currentmodule:: retworkx
+
+.. autofunction:: digraph_random_layout

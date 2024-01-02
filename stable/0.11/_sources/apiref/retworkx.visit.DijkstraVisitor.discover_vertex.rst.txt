@@ -1,0 +1,6 @@
+retworkx.visit.DijkstraVisitor.discover\_vertex
+===============================================
+
+.. currentmodule:: retworkx.visit
+
+.. automethod:: DijkstraVisitor.discover_vertex

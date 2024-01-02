@@ -1,0 +1,6 @@
+retworkx.PyDiGraph.out\_degree
+==============================
+
+.. currentmodule:: retworkx
+
+.. automethod:: PyDiGraph.out_degree
