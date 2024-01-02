@@ -808,17 +808,17 @@
     <div class="qiskit-previous-releases-list-container">
         <ul>
         
-            
+            <li><a href="/ecosystem/rustworkx/stable/0.9/index.html" rel="nofollow">0.9</a></li>
         
-            
+            <li><a href="/ecosystem/rustworkx/stable/0.8/index.html" rel="nofollow">0.8</a></li>
         
-            <li><a href="/stable/0.13/index.html" rel="nofollow">0.13</a></li>
+            <li><a href="/ecosystem/rustworkx/stable/0.13/index.html" rel="nofollow">0.13</a></li>
         
-            <li><a href="/stable/0.12/index.html" rel="nofollow">0.12</a></li>
+            <li><a href="/ecosystem/rustworkx/stable/0.12/index.html" rel="nofollow">0.12</a></li>
         
-            
+            <li><a href="/ecosystem/rustworkx/stable/0.11/index.html" rel="nofollow">0.11</a></li>
         
-            
+            <li><a href="/ecosystem/rustworkx/stable/0.10/index.html" rel="nofollow">0.10</a></li>
         
         </ul>
     </div>
@@ -855,10 +855,10 @@
         <article role="main">
           <br><br><br><section id="release-notes">
 <h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this heading">#</a></h1>
-<section id="relnotes-0-13-0-90">
-<span id="id1"></span><h2>0.13.0-90<a class="headerlink" href="#relnotes-0-13-0-90" title="Permalink to this heading">#</a></h2>
+<section id="relnotes-0-13-0-96">
+<span id="id1"></span><h2>0.13.0-96<a class="headerlink" href="#relnotes-0-13-0-96" title="Permalink to this heading">#</a></h2>
 <section id="new-features">
-<span id="relnotes-0-13-0-90-new-features"></span><h3>New Features<a class="headerlink" href="#new-features" title="Permalink to this heading">#</a></h3>
+<span id="relnotes-0-13-0-96-new-features"></span><h3>New Features<a class="headerlink" href="#new-features" title="Permalink to this heading">#</a></h3>
 <ul>
 <li><p>Added two new random graph generator functions,
 <a class="reference internal" href="apiref/rustworkx.directed_barabasi_albert_graph.html#rustworkx.directed_barabasi_albert_graph" title="rustworkx.directed_barabasi_albert_graph"><code class="xref py py-func docutils literal notranslate"><span class="pre">directed_barabasi_albert_graph()</span></code></a> and <a class="reference internal" href="apiref/rustworkx.barabasi_albert_graph.html#rustworkx.barabasi_albert_graph" title="rustworkx.barabasi_albert_graph"><code class="xref py py-func docutils literal notranslate"><span class="pre">barabasi_albert_graph()</span></code></a>,
@@ -887,6 +887,11 @@ extend an input graph. For example:</p>
 <li><p>Added a new function to the rustworkx-core module <code class="docutils literal notranslate"><span class="pre">rustworkx_core::generators</span></code>
 <code class="docutils literal notranslate"><span class="pre">barabasi_albert_graph()</span></code> which is used to generate a random graph
 using Barabási–Albert preferential attachment to extend an input graph.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Added new functions <code class="xref py py-func docutils literal notranslate"><span class="pre">graph_all_shortest_paths()</span></code> and
+<code class="xref py py-func docutils literal notranslate"><span class="pre">digraph_all_shortest_paths()</span></code> that finds every
+simple shortest path in a (di)graph.</p></li>
 </ul>
 <ul class="simple">
 <li><p>Added a new function <code class="docutils literal notranslate"><span class="pre">two_color</span></code> to the rustworkx-core <code class="docutils literal notranslate"><span class="pre">rustworkx_core::coloring</span></code>
@@ -1196,7 +1201,7 @@ For example:</p>
 </ul>
 </section>
 <section id="upgrade-notes">
-<span id="relnotes-0-13-0-90-upgrade-notes"></span><h3>Upgrade Notes<a class="headerlink" href="#upgrade-notes" title="Permalink to this heading">#</a></h3>
+<span id="relnotes-0-13-0-96-upgrade-notes"></span><h3>Upgrade Notes<a class="headerlink" href="#upgrade-notes" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The minimum supported rust version (MSRV) for rustworkx and rustworkx-core
 has been raised to 1.64.0. Previously you could build rustworkx or
@@ -1273,7 +1278,7 @@ issues are encountered with s390x Linux please open an issue.</p></li>
 </ul>
 </section>
 <section id="deprecation-notes">
-<span id="relnotes-0-13-0-90-deprecation-notes"></span><h3>Deprecation Notes<a class="headerlink" href="#deprecation-notes" title="Permalink to this heading">#</a></h3>
+<span id="relnotes-0-13-0-96-deprecation-notes"></span><h3>Deprecation Notes<a class="headerlink" href="#deprecation-notes" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The legacy <code class="docutils literal notranslate"><span class="pre">retworkx</span></code> package that operates as a backwards compatibility
 alias for <code class="docutils literal notranslate"><span class="pre">rustworkx</span></code> has been marked as deprecated. If you’re using
@@ -1282,7 +1287,7 @@ import.</p></li>
 </ul>
 </section>
 <section id="bug-fixes">
-<span id="relnotes-0-13-0-90-bug-fixes"></span><h3>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this heading">#</a></h3>
+<span id="relnotes-0-13-0-96-bug-fixes"></span><h3>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Fixes missing method that is present in PyDiGraph but not in PyGraph.
 see <a class="reference external" href="https://github.com/Qiskit/rustworkx/issues/837">#837</a> for more info.</p></li>
@@ -1301,7 +1306,7 @@ compared to what was expected.</p></li>
 </ul>
 </section>
 <section id="other-notes">
-<span id="relnotes-0-13-0-90-other-notes"></span><h3>Other Notes<a class="headerlink" href="#other-notes" title="Permalink to this heading">#</a></h3>
+<span id="relnotes-0-13-0-96-other-notes"></span><h3>Other Notes<a class="headerlink" href="#other-notes" title="Permalink to this heading">#</a></h3>
 <ul>
 <li><p>This version of rustworkx is explicitly pinned to the Numpy 1.x series,
 because it includes compiled extensions that are not yet compiled against
@@ -4761,7 +4766,7 @@ specialized rustworkx exception class can be used.</p></li>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Release Notes</a><ul>
-<li><a class="reference internal" href="#relnotes-0-13-0-90">0.13.0-90</a><ul>
+<li><a class="reference internal" href="#relnotes-0-13-0-96">0.13.0-96</a><ul>
 <li><a class="reference internal" href="#new-features">New Features</a></li>
 <li><a class="reference internal" href="#upgrade-notes">Upgrade Notes</a></li>
 <li><a class="reference internal" href="#deprecation-notes">Deprecation Notes</a></li>
