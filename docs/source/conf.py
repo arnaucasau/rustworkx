@@ -21,7 +21,7 @@ import subprocess
 
 project = 'rustworkx'
 copyright = '2021, rustworkx Contributors'
-docs_url_prefix = "ecosystem/rustworkx"
+docs_url_prefix = "rustworkx"
 
 # The short X.Y version.
 version = '0.14.0'
