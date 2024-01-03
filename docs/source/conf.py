@@ -19,9 +19,15 @@ import subprocess
 
 # General configuration:
 
+<<<<<<< HEAD
 project = u'rustworkx'
 copyright = u'2021, rustworkx Contributors'
 
+=======
+project = 'rustworkx'
+copyright = '2021, rustworkx Contributors'
+docs_url_prefix = "rustworkx"
+>>>>>>> 00a28ed5 (deploy docs)
 
 # The short X.Y version.
 version = '0.12.1'
