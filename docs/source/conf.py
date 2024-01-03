@@ -19,9 +19,9 @@ import subprocess
 
 # General configuration:
 
-project = u'retworkx'
-copyright = u'2021, retworkx Contributors'
-
+project = 'rustworkx'
+copyright = '2021, rustworkx Contributors'
+docs_url_prefix = "rustworkx"
 
 # The short X.Y version.
 version = '0.11.0'
